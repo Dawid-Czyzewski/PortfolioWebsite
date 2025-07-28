@@ -15,6 +15,8 @@
     --color-gray-900: oklch(21% 0.034 264.665);
     --spacing: 0.25rem;
     --container-7xl: 80rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --font-weight-semibold: 600;
@@ -183,6 +185,9 @@
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
   }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .block {
     display: block;
   }
@@ -221,6 +226,9 @@
   }
   .resize {
     resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .items-center {
     align-items: center;
@@ -262,9 +270,6 @@
   .bg-gray-900 {
     background-color: var(--color-gray-900);
   }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
-  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -277,8 +282,15 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -291,9 +303,6 @@
   .text-gray-100 {
     color: var(--color-gray-100);
   }
-  .text-yellow-400 {
-    color: var(--color-yellow-400);
-  }
   .underline {
     text-decoration-line: underline;
   }
@@ -305,13 +314,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-100);
-      }
-    }
-  }
-  .hover\:bg-gray-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-700);
       }
     }
   }
@@ -334,6 +336,11 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
+  .md\:mb-0 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -342,6 +349,11 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
     }
   }
   .lg\:px-8 {
