@@ -2,5 +2,64 @@
   "about": "About",
   "projects": "Projects",
   "contact": "Contact",
-  "softwareDeveloper": "Software Developer"
+  "softwareDeveloper": "Software Developer",
+  "aboutTitle": "About me",
+  "aboutDescription": "I am a programming enthusiast with experience in building modern web applications. I enjoy learning new technologies and developing my skills.",
+  "aboutImageAlt": "Programmer photo",
+  "trustedMeTitle": "Trusted me",
+  "trustedCompanies": [
+    {
+      "name": "Zirto",
+      "logoUrl": "https://cdn-gcmjl.nitrocdn.com/UCYBrQScZZanDqyZZKBSJOJoiOlaNKfK/assets/images/optimized/rev-b23fa68/zirto.pl/wp-content/uploads/2022/05/logo-dark.png",
+      "role": "PHP developer",
+      "duration": "4 months"
+    },
+    {
+      "name": "IRONteam",
+      "logoUrl": "https://ironteam.pl/wp-content/uploads/2024/05/LOGO-KOLOR-18-scaled-1-320x168.png",
+      "role": "PHP developer",
+      "duration": "8 months"
+    },
+    {
+      "name": "BluSoft",
+      "logoUrl": "https://panel.bluserwer.pl/images/blusoft.webp",
+      "role": "Junior PHP developer",
+      "duration": "1 year and 7 months"
+    },
+    {
+      "name": "Vocale",
+      "logoUrl": "https://vocale.app/img/logo_V.80efb8d5.png",
+      "role": "Junior flutter developer",
+      "duration": "2 years"
+    }
+  ],
+  "workedFor": "I worked there for {{duration}}",
+  "workedForCurrent": "currently working here for {{duration}}",
+  "aboutSkillsTitle": "Technologies I know",
+  "aboutSkills": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "HTML",
+    "CSS",
+    "Git",
+    "PHP",
+    "Symfony",
+    "Java",
+    "Spring Boot",
+    "MySQL",
+    "jQuery",
+    "Tailwind",
+    "WordPress",
+    "WooCommerce",
+    "Flutter",
+    "Dart"
+  ],
+  "experienceSimple": "Over 3 years of commercial experience!",
+  "seePortfolioBtn": "See my portfolio",
+  "educationTitle": "My education",
+  "educationList": [
+    "Wyższa Szkoła Gospodarki w Bydgoszczy, Computer Science, 2024-2028",
+    "Zespół Szkół Mechanicznych nr 1, IT Technician (programmer), 2019-2024"
+  ]
 }
