@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ProjectsPage from './pages/ProjectsPage';
+import RefinansePage from './pages/projects/RefinansePage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path='/projects' element={<ProjectsPage />} />
+        <Route path='/project/refinanse' element={<RefinansePage />} />
       </Routes>
       <Footer />
     </HashRouter>

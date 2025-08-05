@@ -3,6 +3,7 @@
   "projects": "Projekty",
   "contact": "Kontakt",
   "aboutTitle": "O mnie",
+  "softwareDeveloper": "Programista",
   "aboutDescription": "Jestem pasjonatem programowania z doświadczeniem w tworzeniu nowoczesnych aplikacji webowych. Lubię uczyć się nowych technologii i rozwijać swoje umiejętności.",
   "aboutImageAlt": "Zdjęcie programisty",
   "trustedMeTitle": "Zaufali mi",
@@ -61,5 +62,10 @@
     "Wyższa Szkoła Gospodarki w Bydgoszczy, Informatyka, 2024-2028",
     "Zespół Szkół Mechanicznych nr 1, Technik programista, 2019-2024"
   ],
-  "projectsTitle": "Moje projekty"
+  "projectsTitle": "Moje projekty",
+  "back": "Powrót",
+  "seeWebsite": "Zobacz projekt",
+  "refinanseMainText": "Refinanse to strona internetowa stworzona dla bydgoskiej kancelari prawnej. Serwis został wykonany w WordPressie z wykorzystaniem kreatora Elementor. Projekt graficzny został wiernie odwzorowany na podstawie makiety przygotowanej w Figma.",
+  "refinanseContact": "Strona zawiera formularz kontaktowy stworzony za pomocą wtyczki Forminator. Formularz został zabezpieczony przy użyciu reCAPTCHA v3.",
+  "refinanseMobileText": "Strona została w pełni dostosowana do urządzeń mobilnych, tabletów oraz komputerów stacjonarnych. Dzięki responsywnemu projektowi, zawartość automatycznie dopasowuje się do rozmiaru ekranu, zapewniając wygodne i intuicyjne korzystanie na każdym urządzeniu."
 }

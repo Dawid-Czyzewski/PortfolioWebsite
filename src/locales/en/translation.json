@@ -62,5 +62,10 @@
     "Wyższa Szkoła Gospodarki w Bydgoszczy, Computer Science, 2024-2028",
     "Zespół Szkół Mechanicznych nr 1, IT Technician (programmer), 2019-2024"
   ],
-  "projectsTitle": "My projects"
+  "projectsTitle": "My projects",
+  "seeWebsite": "See project",
+  "back": "Back",
+  "refinanseMainText": "Refinanse is a website created for a law firm based in Bydgoszcz. The site was built using WordPress and the Elementor page builder. The design was faithfully recreated based on a mockup originally created in Figma.",
+  "refinanseContact": "The website includes a contact form created using the Forminator plugin. The form is secured with reCAPTCHA v3.",
+  "refinanseMobileText": "The website is fully responsive and optimized for mobile devices, tablets, and desktop screens. Its layout adapts seamlessly to any screen size, ensuring a smooth and user-friendly experience across all platforms."
 }
