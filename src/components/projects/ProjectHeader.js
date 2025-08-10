@@ -5,7 +5,7 @@ const ProjectHeader = ({ title, onBack, t }) => (
     </h1>
     <button
       onClick={onBack}
-      className="px-6 py-2 rounded-full bg-gradient-to-r from-teal-500 via-blue-500 to-indigo-500 text-white font-bold shadow-lg hover:scale-105 transition-transform duration-200 border-2 border-white/10"
+      className="px-6 py-2 cursor-pointer rounded-full bg-gradient-to-r from-teal-500 via-blue-500 to-indigo-500 text-white font-bold shadow-lg hover:scale-105 transition-transform duration-200 border-2 border-white/10"
     >
       ← {t("back")}
     </button>
