@@ -6,7 +6,7 @@ const BASE_URL = 'http://localhost:3000#';
 const projects = [
   {
     title: 'AnkietDev',
-    link: `${BASE_URL}/projects/ankietDev`,
+    link: `${BASE_URL}/project/ankietDev`,
   },
   {
     title: 'Refinanse',

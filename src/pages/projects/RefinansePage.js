@@ -28,7 +28,7 @@ const RefinansePage = () => {
 
         <ProjectSection
           image={mainPagePhoto}
-          alt="Refinanse screenshot"
+          alt="Refinanse main photo"
           className="mb-8 sm:mb-10 md:mb-12"
           imageClassName="w-full max-w-full sm:max-w-md lg:max-w-lg h-auto rounded-2xl shadow-2xl border-2 border-teal-400 object-cover transition-transform transform hover:scale-105"
           contentClassName="bg-black bg-opacity-40 backdrop-blur-lg p-6 rounded-2xl shadow-lg"
@@ -40,7 +40,7 @@ const RefinansePage = () => {
 
         <ProjectSection
           image={refinanseContactPhoto}
-          alt="Funkcje aplikacji"
+          alt="refinanse contact page"
           reverse
           className="mb-8 sm:mb-10 md:mb-12"
           imageClassName="w-full max-w-full sm:max-w-md lg:max-w-lg h-auto rounded-2xl shadow-2xl border-2 border-teal-400 object-cover transition-transform transform hover:scale-105"
@@ -53,7 +53,7 @@ const RefinansePage = () => {
 
         <ProjectSection
           image={refinanseMobilePhoto}
-          alt="Refinanse mobile screenshot"
+          alt="Refinanse mobile photo"
           className="mb-8 sm:mb-10 md:mb-12"
           imageClassName="w-full max-w-full sm:max-w-md lg:max-w-lg h-auto rounded-2xl shadow-2xl border-2 border-teal-400 object-cover transition-transform transform hover:scale-105"
           contentClassName="bg-black bg-opacity-40 backdrop-blur-lg p-6 rounded-2xl shadow-lg"
@@ -67,6 +67,7 @@ const RefinansePage = () => {
           <VisitButton
             url="https://kancelaria.refinanse.pl/"
             t={t}
+            text="seeWebsite"
             className="mt-4 sm:mt-6 md:mt-8 px-8 py-3 rounded-full bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-500 text-lg font-semibold shadow-xl hover:scale-105 transform transition"
           />
         </div>

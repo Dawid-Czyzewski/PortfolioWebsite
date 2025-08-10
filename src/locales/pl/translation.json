@@ -64,8 +64,17 @@
   ],
   "projectsTitle": "Moje projekty",
   "back": "Powrót",
+  "seeGithub": "Zobacz github",
+  "pageNotFound": "Strona nie znaleziona",
+  "backToHome": "Strona główna",
   "seeWebsite": "Zobacz projekt",
   "refinanseMainText": "Refinanse to strona internetowa stworzona dla bydgoskiej kancelari prawnej. Serwis został wykonany w WordPressie z wykorzystaniem kreatora Elementor. Projekt graficzny został wiernie odwzorowany na podstawie makiety przygotowanej w Figma.",
   "refinanseContact": "Strona zawiera formularz kontaktowy stworzony za pomocą wtyczki Forminator. Formularz został zabezpieczony przy użyciu reCAPTCHA v3.",
-  "refinanseMobileText": "Strona została w pełni dostosowana do urządzeń mobilnych, tabletów oraz komputerów stacjonarnych. Dzięki responsywnemu projektowi, zawartość automatycznie dopasowuje się do rozmiaru ekranu, zapewniając wygodne i intuicyjne korzystanie na każdym urządzeniu."
+  "refinanseMobileText": "Strona została w pełni dostosowana do urządzeń mobilnych, tabletów oraz komputerów stacjonarnych. Dzięki responsywnemu projektowi, zawartość automatycznie dopasowuje się do rozmiaru ekranu, zapewniając wygodne i intuicyjne korzystanie na każdym urządzeniu.",
+  "ankietDevMainText": "AnkietDev to platforma, która umożliwia tworzenie ankiet online w prosty i szybki sposób. Użytkownicy mogą w łatwy sposób sprawdzać wyniki swoich ankiet, a każdą utworzoną ankietę można edytować lub usunąć. Rejestracja jest szybka, intuicyjna i bezproblemowa.",
+  "ankietDevContact": "Platforma posiada podstronę kontaktową z formularzem, w której można zgłosić prośbę o pomoc lub nawiązać współpracę z twórcą. Użytkownicy mogą również przekazać sugestie dotyczące funkcji, które powinny zostać dodane do platformy.",
+  "ankietDevRegisterText": "Strona oferuje prostą rejestrację składającą się jedynie z trzech pól: e-mail, hasło oraz powtórzenie hasła. Nie jest wymagane potwierdzenie rejestracji, dzięki czemu proces jest bardzo szybki, a użytkownik może od razu po rejestracji zalogować się i utworzyć swoją pierwszą ankietę.",
+  "ankietDevDashboardText": "Dashboard to miejsce, w którym użytkownik może zarządzać swoimi ankietami — usuwać je, edytować lub tworzyć nowe. Istnieje również możliwość podglądu wybranej ankiety. Z tego poziomu można przejść do podstrony ze statystykami, korzystając z nawigacji umieszczonej po lewej stronie.",
+  "ankietDevCreateNewText": "Tworzenie ankiety jest proste — można dodawać pytania otwarte oraz zamknięte z dowolną liczbą opcji odpowiedzi. Szybko, łatwo i skutecznie.",
+  "ankietDevStatisticsText": "Platforma umożliwia przeglądanie wyników ankiet w czytelnej formie procentowej oraz podgląd odpowiedzi otwartych. Użytkownik może sprawdzić liczbę odpowiedzi dla każdego pytania, a także łączną liczbę udzielonych odpowiedzi w całej ankiecie."
 }

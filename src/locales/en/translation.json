@@ -64,8 +64,17 @@
   ],
   "projectsTitle": "My projects",
   "seeWebsite": "See project",
+  "pageNotFound": "Page not found",
+  "backToHome": "Home",
   "back": "Back",
+  "seeGithub": "See github",
   "refinanseMainText": "Refinanse is a website created for a law firm based in Bydgoszcz. The site was built using WordPress and the Elementor page builder. The design was faithfully recreated based on a mockup originally created in Figma.",
   "refinanseContact": "The website includes a contact form created using the Forminator plugin. The form is secured with reCAPTCHA v3.",
-  "refinanseMobileText": "The website is fully responsive and optimized for mobile devices, tablets, and desktop screens. Its layout adapts seamlessly to any screen size, ensuring a smooth and user-friendly experience across all platforms."
+  "refinanseMobileText": "The website is fully responsive and optimized for mobile devices, tablets, and desktop screens. Its layout adapts seamlessly to any screen size, ensuring a smooth and user-friendly experience across all platforms.",
+  "ankietDevMainText": "AnkietDev is a platform that enables you to create online surveys quickly and easily. Users can effortlessly view their survey results, and every created survey can be edited or deleted. Registration is fast, intuitive, and hassle-free.",
+  "ankietDevContact": "The platform features a contact page with a form where users can request assistance or propose collaboration with the creator. Users can also submit suggestions for new features that should be added to the platform.",
+  "ankietDevRegisterText": "The website offers a simple registration process with only three fields: email, password, and confirm password. No confirmation is required, making the process very fast — users can log in immediately after registering and create their first survey right away.",
+  "ankietDevDashboardText": "The dashboard is where users can manage their surveys — delete, edit, or create new ones. They can also preview a selected survey. From here, users can navigate to the statistics page via the menu located on the left-hand side.",
+  "ankietDevCreateNewText": "Creating a survey is simple — you can add both open-ended and multiple-choice questions with any number of answer options. Fast, easy, and effective",
+  "ankietDevStatisticsText": "The platform allows users to review survey results in a clear percentage format and view open-ended responses. It also provides the number of answers for each question, as well as the total number of responses for the entire survey."
 }
