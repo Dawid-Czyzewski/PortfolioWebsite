@@ -1,9 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const ContactPage = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = `${t('contact')}`;
+  }, [t]);
 
   const containerVariants = {
     hidden: { opacity: 0, y: 30 },

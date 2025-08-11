@@ -1,9 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const NotFoundPage = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = `${t('pageNotFound')}`;
+  }, [t]);
 
   return (
     <section className="relative flex flex-col items-center justify-center text-white bg-black overflow-hidden" style={{ minHeight: '100vh' }}>

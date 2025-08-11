@@ -1,6 +1,7 @@
 import ProjectSection from "../../components/projects/ProjectSection";
 import ProjectHeader from "../../components/projects/ProjectHeader";
 import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 import mainPagePhoto from '../../assets/ankietDev/mainPage.png';
 import ankietDevContactPhoto from '../../assets/ankietDev/ankietDevContact.png';
 import ankietDevRegsterPhoto from '../../assets/ankietDev/register.png';
@@ -12,6 +13,10 @@ import VisitButton from "../../components/projects/VisitButton";
 const AnkietDevPage = () => {
   const { t } = useTranslation();
   const handleBack = () => window.history.back();
+
+  useEffect(() => {
+    document.title = `${t('AnkietDev')}`;
+  }, [t]);
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-white bg-gradient-to-b from-black to-gray-900 overflow-hidden py-8 px-4 sm:py-12 sm:px-6 md:py-16 md:px-8">

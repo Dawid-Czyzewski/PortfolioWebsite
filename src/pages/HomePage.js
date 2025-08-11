@@ -1,8 +1,13 @@
 import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const HomePage = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = `${t('home')}`;
+  }, [t]);
 
   return (
     <section className="relative flex flex-col items-center justify-center text-white bg-black overflow-hidden" style={{ minHeight: '100vh' }}>

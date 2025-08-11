@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 const BASE_URL = 'http://localhost:3000#';
 
@@ -30,6 +31,10 @@ const itemVariants = {
 
 const ProjectsPage = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = `${t('projects')}`;
+  }, [t]);
 
   return (
     <section

@@ -1,9 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import mainPhoto from '../assets/mainPhoto.jpg';
 
 const AboutPage = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = `${t('about')}`;
+  }, [t]);
+
 
   const containerVariants = {
     hidden: { opacity: 0, y: 30 },
