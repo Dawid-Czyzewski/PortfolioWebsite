@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 
-const BASE_URL = 'http://localhost:3000#';
+const BASE_URL = 'https://dawid-developer.pl/#';
 
 const projects = [
   {
