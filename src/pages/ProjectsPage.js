@@ -8,10 +8,6 @@ const projects = [
   {
     title: 'AnkietDev',
     link: `${BASE_URL}/project/ankietDev`,
-  },
-  {
-    title: 'Refinanse',
-    link: `${BASE_URL}/project/refinanse`,
   }
 ];
 
