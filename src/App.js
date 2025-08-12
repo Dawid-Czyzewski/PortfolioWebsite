@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ProjectsPage from './pages/ProjectsPage';
-import RefinansePage from './pages/projects/RefinansePage';
 import AnkietDevPage from './pages/projects/AnkietDevPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -18,7 +17,6 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/project/refinanse" element={<RefinansePage />} />
         <Route path="/project/ankietDev" element={<AnkietDevPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
