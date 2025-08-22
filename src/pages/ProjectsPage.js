@@ -8,6 +8,10 @@ const projects = [
   {
     title: 'AnkietDev',
     link: `${BASE_URL}/project/ankietDev`,
+  },
+  {
+    title: 'Wordpress',
+    link: 'https://github.com/Dawid-Czyzewski/Wordpress-portfolio',
   }
 ];
 
