@@ -14,7 +14,7 @@ const Header = () => {
     }
   }, [lang, i18n]);
 
-  const toggleLang = (lc) => setLang(lc);
+  const changeLang = (lc) => setLang(lc);
 
   return (
     <header className="bg-gray-900 dark:bg-gray-800 text-gray-100 sticky top-0 z-50">
@@ -26,12 +26,25 @@ const Header = () => {
           <a href="#contact" className="hover:text-teal-400">{t('contact')}</a>
         </nav>
         <div className="flex items-center space-x-4">
-          <button onClick={() => toggleLang(lang === 'pl' ? 'en' : 'pl')}
-            className="flex items-center border border-gray-100 px-2 py-1 rounded hover:bg-gray-100 hover:text-gray-900"
-            aria-label="Switch language">
-            {lang === 'pl' ? <PL className="h-5 w-7 mr-1" title="PL"/> : <GB className="h-5 w-7 mr-1" title="GB"/>}
-            {lang.toUpperCase()}
-          </button>
+          <div className="flex space-x-2">
+            <button
+              onClick={() => changeLang('pl')}
+              className={`flex items-center px-2 py-1 rounded border ${lang === 'pl' ? 'bg-gray-100 text-gray-900' : 'border-gray-100 hover:bg-gray-100 hover:text-gray-900'}`}
+              aria-label="Polski"
+            >
+              <PL className="h-5 w-7 mr-1" title="PL" />
+              PL
+            </button>
+            <button
+              onClick={() => changeLang('en')}
+              className={`flex items-center px-2 py-1 rounded border ${lang === 'en' ? 'bg-gray-100 text-gray-900' : 'border-gray-100 hover:bg-gray-100 hover:text-gray-900'}`}
+              aria-label="English"
+            >
+              <GB className="h-5 w-7 mr-1" title="GB" />
+              EN
+            </button>
+          </div>
+
           <button className="md:hidden p-2" onClick={() => setNavOpen(!navOpen)} aria-label="Toggle menu">
             {navOpen ? <XMarkIcon className="h-6 w-6"/> : <Bars3Icon className="h-6 w-6"/>}
           </button>
