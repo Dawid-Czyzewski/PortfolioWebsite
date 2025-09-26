@@ -5,7 +5,6 @@
   "home": "Home",
   "softwareDeveloper": "Software Developer",
   "aboutTitle": "About me",
-  "aboutDescription": "I am a programming enthusiast with experience in building modern web applications. I enjoy learning new technologies and developing my skills.",
   "aboutImageAlt": "Programmer photo",
   "trustedMeTitle": "Trusted me",
   "trustedCompanies": [
@@ -36,33 +35,8 @@
   ],
   "workedFor": "I worked there for {{duration}}",
   "workedForCurrent": "currently working here for {{duration}}",
-  "aboutSkillsTitle": "Technologies I know",
-  "aboutSkills": [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "HTML",
-    "CSS",
-    "Git",
-    "PHP",
-    "Symfony",
-    "Java",
-    "Spring Boot",
-    "MySQL",
-    "jQuery",
-    "Tailwind",
-    "WordPress",
-    "WooCommerce",
-    "Flutter",
-    "Dart"
-  ],
   "experienceSimple": "Over 3 years of commercial experience!",
   "seePortfolioBtn": "See my portfolio",
-  "educationTitle": "My education",
-  "educationList": [
-    "Wyższa Szkoła Gospodarki w Bydgoszczy, Computer Science, 2024-2028",
-    "Zespół Szkół Mechanicznych nr 1, IT Technician (programmer), 2019-2024"
-  ],
   "projectsTitle": "My projects",
   "seeWebsite": "See project",
   "pageNotFound": "Page not found",
@@ -74,5 +48,71 @@
   "ankietDevRegisterText": "The website offers a simple registration process with only three fields: email, password, and confirm password. No confirmation is required, making the process very fast — users can log in immediately after registering and create their first survey right away.",
   "ankietDevDashboardText": "The dashboard is where users can manage their surveys — delete, edit, or create new ones. They can also preview a selected survey. From here, users can navigate to the statistics page via the menu located on the left-hand side.",
   "ankietDevCreateNewText": "Creating a survey is simple — you can add both open-ended and multiple-choice questions with any number of answer options. Fast, easy, and effective",
-  "ankietDevStatisticsText": "The platform allows users to review survey results in a clear percentage format and view open-ended responses. It also provides the number of answers for each question, as well as the total number of responses for the entire survey."
+  "ankietDevStatisticsText": "The platform allows users to review survey results in a clear percentage format and view open-ended responses. It also provides the number of answers for each question, as well as the total number of responses for the entire survey.",
+  "homeSubtitle": "I create modern web applications with a passion for clean code and innovative solutions.",
+  "footerDescription": "I create modern web applications with a passion for clean code and innovative solutions.",
+  "footerNavigation": "Navigation",
+  "footerContact": "Contact",
+  "footerCopyright": "© 2025 Dawid Czyżewski. All rights reserved.",
+  "footerMadeWith": "Made with ❤️ using React & Tailwind CSS",
+  "aboutGreeting": "Hi! I'm Dawid",
+  "aboutDescription": "I am a programming enthusiast in creating modern web and mobile applications. I specialize in PHP, JavaScript, React and Flutter, but I like to experiment with different technologies.",
+  "aboutExperience": "Almost 4 years of commercial experience",
+  "aboutContactMe": "Contact me",
+  "aboutSkills": "Skills",
+  "aboutExperienceTitle": "Experience",
+  "aboutEducationTitle": "Education",
+  "experienceZirto": {
+    "title": "PHP Developer",
+    "period": "6 months - Currently",
+    "company": "Zirto",
+    "description": "Development of web applications in PHP"
+  },
+  "experienceIRONteam": {
+    "title": "PHP Developer",
+    "period": "8 months",
+    "company": "IRONteam",
+    "description": "Development of medical applications in PHP"
+  },
+  "experienceBluSoft": {
+    "title": "Junior PHP Developer",
+    "period": "1 year and 7 months",
+    "company": "BluSoft",
+    "description": "Development of web and mobile applications"
+  },
+  "experienceVocale": {
+    "title": "Junior Flutter Developer",
+    "period": "2 years",
+    "company": "Vocale",
+    "description": "Development of mobile applications in Flutter"
+  },
+  "educationWSG": {
+    "degree": "Computer Science",
+    "period": "2024 - 2028",
+    "school": "Wyższa Szkoła Gospodarki w Bydgoszczy",
+    "description": "Higher education in computer science"
+  },
+  "educationZSM": {
+    "degree": "IT Technician (programmer)",
+    "period": "2019 - 2024",
+    "school": "Zespół Szkół Mechanicznych nr 1",
+    "description": "Technical school in IT"
+  },
+  "contactEmail": "Email",
+  "contactLocation": "Location",
+  "contactLocationValue": "Bydgoszcz / Remote",
+  "contactFindMe": "Find me on:",
+  "projectsDescription": "Here are all the projects from my current portfolio. Each of them represents my skills and passion for creating modern solutions.",
+  "projectsView": "View",
+  "projectsComingSoon": "More projects coming soon!",
+  "projectsComingSoonDescription": "I'm working on new projects that will be available soon. Follow my social media to stay updated.",
+  "projectsContactMe": "Contact me",
+  "ankietDevTitle": "Survey creation platform",
+  "ankietDevDescription": "AnkietDev is a modern web platform for creating, managing and analyzing surveys. Built in PHP using React and Tailwind CSS.",
+  "ankietDevMainTitle": "Main page",
+  "ankietDevContactTitle": "Contact",
+  "ankietDevRegisterTitle": "Registration",
+  "ankietDevDashboardTitle": "User panel",
+  "ankietDevCreateNewTitle": "Creating survey",
+  "ankietDevStatisticsTitle": "Statistics"
 }

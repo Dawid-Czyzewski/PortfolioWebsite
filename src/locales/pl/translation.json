@@ -5,7 +5,6 @@
   "aboutTitle": "O mnie",
   "home": "Strona główna",
   "softwareDeveloper": "Programista",
-  "aboutDescription": "Jestem pasjonatem programowania z doświadczeniem w tworzeniu nowoczesnych aplikacji webowych. Lubię uczyć się nowych technologii i rozwijać swoje umiejętności.",
   "aboutImageAlt": "Zdjęcie programisty",
   "trustedMeTitle": "Zaufali mi",
   "trustedCompanies": [
@@ -36,33 +35,8 @@
   ],
   "workedFor": "pracowałem tam przez: {{duration}}",
   "workedForCurrent": "aktualnie pracuję tutaj od {{duration}}",
-  "aboutSkillsTitle": "Technologie które znam",
-  "aboutSkills": [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "HTML",
-    "CSS",
-    "Git",
-    "PHP",
-    "Symfony",
-    "Java",
-    "Spring Boot",
-    "MySQL",
-    "jQuery",
-    "Tailwind",
-    "WordPress",
-    "WooCommerce",
-    "Flutter",
-    "Dart"
-  ],
   "experienceSimple": "Łącznie ponad {{years}} lata doświadczenia komercyjnego!",
   "seePortfolioBtn": "Zobacz moje portfolio",
-  "educationTitle": "Moje wykształcenie",
-  "educationList": [
-    "Wyższa Szkoła Gospodarki w Bydgoszczy, Informatyka, 2024-2028",
-    "Zespół Szkół Mechanicznych nr 1, Technik programista, 2019-2024"
-  ],
   "projectsTitle": "Moje projekty",
   "back": "Powrót",
   "seeGithub": "Zobacz github",
@@ -74,5 +48,71 @@
   "ankietDevRegisterText": "Strona oferuje prostą rejestrację składającą się jedynie z trzech pól: e-mail, hasło oraz powtórzenie hasła. Nie jest wymagane potwierdzenie rejestracji, dzięki czemu proces jest bardzo szybki, a użytkownik może od razu po rejestracji zalogować się i utworzyć swoją pierwszą ankietę.",
   "ankietDevDashboardText": "Dashboard to miejsce, w którym użytkownik może zarządzać swoimi ankietami — usuwać je, edytować lub tworzyć nowe. Istnieje również możliwość podglądu wybranej ankiety. Z tego poziomu można przejść do podstrony ze statystykami, korzystając z nawigacji umieszczonej po lewej stronie.",
   "ankietDevCreateNewText": "Tworzenie ankiety jest proste — można dodawać pytania otwarte oraz zamknięte z dowolną liczbą opcji odpowiedzi. Szybko, łatwo i skutecznie.",
-  "ankietDevStatisticsText": "Platforma umożliwia przeglądanie wyników ankiet w czytelnej formie procentowej oraz podgląd odpowiedzi otwartych. Użytkownik może sprawdzić liczbę odpowiedzi dla każdego pytania, a także łączną liczbę udzielonych odpowiedzi w całej ankiecie."
+  "ankietDevStatisticsText": "Platforma umożliwia przeglądanie wyników ankiet w czytelnej formie procentowej oraz podgląd odpowiedzi otwartych. Użytkownik może sprawdzić liczbę odpowiedzi dla każdego pytania, a także łączną liczbę udzielonych odpowiedzi w całej ankiecie.",
+  "homeSubtitle": "Tworzę nowoczesne aplikacje webowe z pasją do czystego kodu i innowacyjnych rozwiązań.",
+  "footerDescription": "Tworzę nowoczesne aplikacje webowe z pasją do czystego kodu i innowacyjnych rozwiązań.",
+  "footerNavigation": "Nawigacja",
+  "footerContact": "Kontakt",
+  "footerCopyright": "© 2025 Dawid Czyżewski. Wszystkie prawa zastrzeżone.",
+  "footerMadeWith": "Stworzone z ❤️ używając React & Tailwind CSS",
+  "aboutGreeting": "Cześć! Jestem Dawid",
+  "aboutDescription": "Jestem pasjonatem programowania w tworzeniu nowoczesnych aplikacji webowych i mobilnych. Specjalizuję się w PHP, JavaScript, React i Flutter, ale lubię eksperymentować z różnymi technologiami.",
+  "aboutExperience": "Prawie 4 lata doświadczenia komercyjnego",
+  "aboutContactMe": "Skontaktuj się ze mną",
+  "aboutSkills": "Umiejętności",
+  "aboutExperienceTitle": "Doświadczenie",
+  "aboutEducationTitle": "Wykształcenie",
+  "experienceZirto": {
+    "title": "PHP Developer",
+    "period": "6 miesięcy - Obecnie",
+    "company": "Zirto",
+    "description": "Rozwój aplikacji webowych w PHP"
+  },
+  "experienceIRONteam": {
+    "title": "PHP Developer",
+    "period": "8 miesięcy",
+    "company": "IRONteam",
+    "description": "Rozwój aplikacji medycznych w PHP"
+  },
+  "experienceBluSoft": {
+    "title": "Junior PHP Developer",
+    "period": "1 rok i 7 miesięcy",
+    "company": "BluSoft",
+    "description": "Rozwój aplikacji webowych i mobilnych"
+  },
+  "experienceVocale": {
+    "title": "Junior Flutter Developer",
+    "period": "2 lata",
+    "company": "Vocale",
+    "description": "Rozwój aplikacji mobilnych w Flutter"
+  },
+  "educationWSG": {
+    "degree": "Informatyka",
+    "period": "2024 - 2028",
+    "school": "Wyższa Szkoła Gospodarki w Bydgoszczy",
+    "description": "Studia wyższe w zakresie informatyki"
+  },
+  "educationZSM": {
+    "degree": "Technik programista",
+    "period": "2019 - 2024",
+    "school": "Zespół Szkół Mechanicznych nr 1",
+    "description": "Technikum informatyczne"
+  },
+  "contactEmail": "Email",
+  "contactLocation": "Lokalizacja",
+  "contactLocationValue": "Bydgoszcz / Zdalnie",
+  "contactFindMe": "Znajdź mnie na:",
+  "projectsDescription": "Oto wszystkie projekty z mojego aktualnego portfolio. Każdy z nich reprezentuje moje umiejętności i pasję do tworzenia nowoczesnych rozwiązań.",
+  "projectsView": "Zobacz",
+  "projectsComingSoon": "Więcej projektów już wkrótce!",
+  "projectsComingSoonDescription": "Pracuję nad kolejnymi projektami, które wkrótce będą dostępne. Śledź moje social media, aby być na bieżąco.",
+  "projectsContactMe": "Skontaktuj się ze mną",
+  "ankietDevTitle": "Platforma do tworzenia ankiet",
+  "ankietDevDescription": "AnkietDev to nowoczesna platforma webowa umożliwiająca tworzenie, zarządzanie i analizę ankiet. Zbudowana w PHP z wykorzystaniem React i Tailwind CSS.",
+  "ankietDevMainTitle": "Strona główna",
+  "ankietDevContactTitle": "Kontakt",
+  "ankietDevRegisterTitle": "Rejestracja",
+  "ankietDevDashboardTitle": "Panel użytkownika",
+  "ankietDevCreateNewTitle": "Tworzenie ankiety",
+  "ankietDevStatisticsTitle": "Statystyki"
 }

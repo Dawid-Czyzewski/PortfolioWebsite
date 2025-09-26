@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
+import { CodeBracketIcon, AcademicCapIcon, BriefcaseIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 import mainPhoto from '../assets/mainPhoto.jpg';
 
 const AboutPage = () => {
@@ -10,198 +11,216 @@ const AboutPage = () => {
     document.title = `${t('about')}`;
   }, [t]);
 
+  const skills = [
+    'JavaScript', 'React', 'Node.js', 'HTML', 'CSS', 'Git', 'PHP', 'Symfony', 
+    'Java', 'Spring Boot', 'MySQL', 'jQuery', 'Tailwind', 'WordPress', 
+    'WooCommerce', 'Flutter', 'Dart'
+  ];
 
-  const containerVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { staggerChildren: 0.3, delayChildren: 0.5 }
+  const experience = [
+    {
+      title: t('experienceZirto.title'),
+      company: t('experienceZirto.company'),
+      period: t('experienceZirto.period'),
+      description: t('experienceZirto.description')
+    },
+    {
+      title: t('experienceIRONteam.title'),
+      company: t('experienceIRONteam.company'),
+      period: t('experienceIRONteam.period'),
+      description: t('experienceIRONteam.description')
+    },
+    {
+      title: t('experienceBluSoft.title'),
+      company: t('experienceBluSoft.company'),
+      period: t('experienceBluSoft.period'),
+      description: t('experienceBluSoft.description')
+    },
+    {
+      title: t('experienceVocale.title'),
+      company: t('experienceVocale.company'),
+      period: t('experienceVocale.period'),
+      description: t('experienceVocale.description')
     }
-  };
+  ];
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
-  };
-
-  const rawSkills = t('aboutSkills', { returnObjects: true });
-  const skills = Array.isArray(rawSkills)
-    ? rawSkills
-    : String(rawSkills).split(',').map(s => s.trim());
-
-  let companies = t('trustedCompanies', { returnObjects: true }) || [];
-
-  companies = companies.map(company => {
-    if (company.name === 'Zirto') {
-      const start = new Date(2025, 2, 1);
-      const now = new Date();
-      let months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
-      if (now.getDate() < start.getDate()) months--;
-      if (months < 1) months = 1;
-      let duration = '';
-      if (t('about', { lng: 'en' }) === 'About' && (t('about') === 'About' || t('about') === 'About me')) {
-        if (months >= 12) {
-          const years = Math.floor(months / 12);
-          const restMonths = months % 12;
-          duration = years + ' year' + (years > 1 ? 's' : '');
-          if (restMonths > 0) duration += ' and ' + restMonths + ' month' + (restMonths > 1 ? 's' : '');
-        } else {
-          duration = months + ' month' + (months > 1 ? 's' : '');
-        }
-      } else {
-        duration = months + ' miesięcy';
-        if (months >= 12) {
-          const years = Math.floor(months / 12);
-          const restMonths = months % 12;
-          duration = years + ' rok' + (years > 1 ? 'i' : '');
-          if (restMonths > 0) duration += ' ' + restMonths + ' mies.';
-        }
-      }
-      return { ...company, duration, currently: true };
+  const education = [
+    {
+      degree: t('educationWSG.degree'),
+      school: t('educationWSG.school'),
+      period: t('educationWSG.period'),
+      description: t('educationWSG.description')
+    },
+    {
+      degree: t('educationZSM.degree'),
+      school: t('educationZSM.school'),
+      period: t('educationZSM.period'),
+      description: t('educationZSM.description')
     }
-    return company;
-  });
+  ];
 
   return (
-    <section
-      id="about"
-      className="relative flex flex-col items-center justify-center text-white bg-black py-20 px-4 overflow-hidden"
-      style={{ minHeight: '100vh' }}
-    >
-      <motion.div
-        className="absolute inset-0 bg-gradient-to-tr from-teal-400 via-blue-500 to-indigo-600 opacity-30"
-        animate={{ scale: [1, 1.05, 1], rotate: [0, 1, 0] }}
-        transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-      />
-
-      <motion.div
-        className="relative z-10 max-w-6xl w-full space-y-32"
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-      >
+    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
         <motion.div
-          className="relative flex flex-col md:flex-row items-center md:items-stretch gap-10 md:gap-16 bg-gradient-to-br from-indigo-900/60 via-blue-800/40 to-teal-700/30 rounded-3xl shadow-2xl p-8 md:p-14 border border-white/10 overflow-hidden"
-          variants={itemVariants}
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
         >
-          <motion.div
-            className="absolute -top-20 -left-20 w-72 h-72 bg-gradient-to-tr from-teal-400 via-blue-500 to-indigo-600 rounded-full opacity-30 blur-2xl z-0"
-            animate={{ scale: [1, 1.1, 1], rotate: [0, 10, 0] }}
-            transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-          />
-          <motion.div
-            className="relative z-10 flex-shrink-0 flex justify-center items-center"
-            initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <img
-              src={mainPhoto}
-              alt={t('aboutImageAlt')}
-              className="w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 object-cover rounded-2xl border-4 border-teal-400 shadow-xl bg-white/10"
-            />
-          </motion.div>
-          <motion.div
-            className="relative z-10 flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left"
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-          >
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-teal-300 via-blue-400 to-indigo-400 bg-clip-text text-transparent drop-shadow-lg">
-              {t('aboutTitle')}
-            </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed text-white/90 max-w-2xl mb-2">
-              {t('aboutDescription')}
-            </p>
-          </motion.div>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+              {t('about')}
+            </span>
+          </h1>
         </motion.div>
-        {companies.length > 0 && (
-          <motion.div variants={itemVariants} className="mt-8 mb-20">
-            <h2 className="text-4xl font-extrabold text-center mb-16 tracking-tight">
-              {t('trustedMeTitle')}
-            </h2>
-            <div className="flex flex-wrap justify-center gap-12">
-              {companies.map((c, idx) => (
-                <div
-                  key={idx}
-                  className="w-full sm:w-[440px] bg-gradient-to-br from-indigo-700 via-blue-600 to-teal-500 shadow-2xl rounded-3xl p-12 flex flex-col items-center border-2 border-white/20 hover:scale-105 transition-transform duration-300"
-                >
-                  <div className="flex flex-col items-center w-full">
-                    <div className="bg-white rounded-xl p-3 mb-6 shadow-md">
-                      <img
-                        src={c.logoUrl}
-                        alt={c.name}
-                        className="h-20 w-36 object-contain"
-                        style={{ maxWidth: '160px', maxHeight: '80px' }}
-                      />
-                    </div>
-                    <div className="text-3xl font-bold text-white mb-2 text-center w-full truncate">
-                      {c.name}
-                    </div>
-                    <div className="text-lg text-white/80 mb-2 text-center w-full">
-                      {c.role}
-                    </div>
-                    <div className="text-base text-white/70 text-center w-full">
-                      {c.currently
-                        ? t('workedForCurrent', { role: c.role, duration: c.duration })
-                        : t('workedFor', { role: c.role, duration: c.duration })}
-                    </div>
-                  </div>
-                </div>
-              ))}
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+          <motion.div
+            className="flex justify-center"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-3xl blur-2xl opacity-30"></div>
+              <img
+                src={mainPhoto}
+                alt="Dawid Czyżewski"
+                className="relative w-80 h-80 object-cover rounded-3xl border-4 border-white/20 shadow-2xl"
+              />
             </div>
           </motion.div>
-        )}
-        <motion.div variants={itemVariants}>
-          <div className="flex justify-center my-6">
-            <span className="text-2xl md:text-3xl font-bold text-white bg-gradient-to-r from-teal-700 via-blue-700 to-indigo-800 px-6 py-3 rounded-xl shadow-lg border border-white/10">
-              {t('experienceSimple', { years: 3 })}
+
+          <motion.div
+            className="flex flex-col justify-center"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <h2 className="text-4xl font-bold text-white mb-6">
+              {t('aboutGreeting')}
+            </h2>
+            <p className="text-white/80 text-lg leading-relaxed mb-8">
+              {t('aboutDescription')}
+            </p>
+            
+            <motion.div
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-purple-400/30 text-purple-300 font-semibold mb-8"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <BriefcaseIcon className="w-5 h-5" />
+              {t('aboutExperience')}
+            </motion.div>
+            <motion.a
+              href="/#contact"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-2xl hover:from-purple-500 hover:to-blue-500 transition-all duration-300 w-fit cursor-pointer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <RocketLaunchIcon className="w-5 h-5" />
+              {t('aboutContactMe')}
+            </motion.a>
+          </motion.div>
+        </div>
+
+        <motion.div
+          className="mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <h2 className="text-4xl font-bold text-white text-center mb-12">
+            <span className="flex items-center justify-center gap-3">
+              <CodeBracketIcon className="w-10 h-10 text-purple-400" />
+              {t('aboutSkills')}
             </span>
-          </div>
-        </motion.div>
-        <motion.div variants={itemVariants}>
-          <h2 className="text-3xl font-extrabold text-center mb-6">
-            {t('aboutSkillsTitle')}
           </h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            {skills.map((skill, idx) => (
-              <span
-                key={idx}
-                className="px-5 py-2 bg-blue-500 bg-opacity-30 text-white rounded-full text-xl font-semibold"
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {skills.map((skill, index) => (
+              <motion.div
+                key={skill}
+                className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-purple-400/50 transition-all duration-300 text-center cursor-pointer"
+                whileHover={{ scale: 1.05, y: -2 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 + index * 0.05 }}
               >
-                {skill}
-              </span>
+                <span className="text-white font-medium">{skill}</span>
+              </motion.div>
             ))}
           </div>
         </motion.div>
-        <motion.div variants={itemVariants}>
-          <h2 className="text-3xl font-extrabold text-center mb-6 mt-12">
-            {t('educationTitle', 'Moje wykształcenie')}
+
+        <motion.div
+          className="mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
+          <h2 className="text-4xl font-bold text-white text-center mb-12">
+            <span className="flex items-center justify-center gap-3">
+              <BriefcaseIcon className="w-10 h-10 text-blue-400" />
+              {t('aboutExperienceTitle')}
+            </span>
           </h2>
-            <div className="flex flex-wrap justify-center gap-12">
-              {(t('educationList', { returnObjects: true }) || []).map((edu, idx) => (
-                <div
-                  key={idx}
-                  className="w-full sm:w-[440px] bg-gradient-to-br from-indigo-700 via-blue-600 to-teal-500 shadow-2xl rounded-3xl p-12 flex flex-col items-center border-2 border-white/20 mb-2"
-                >
-                  <span className="text-xl font-semibold text-white text-center w-full">
-                    {edu}
-                  </span>
+          <div className="space-y-8">
+            {experience.map((exp, index) => (
+              <motion.div
+                key={index}
+                className="p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-blue-400/50 transition-all duration-300"
+                whileHover={{ scale: 1.02, y: -2 }}
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.9 + index * 0.1 }}
+              >
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <h3 className="text-2xl font-bold text-white mb-2 md:mb-0">{exp.title}</h3>
+                  <span className="text-purple-400 font-semibold">{exp.period}</span>
                 </div>
-              ))}
-            </div>
+                <h4 className="text-xl text-blue-300 font-semibold mb-2">{exp.company}</h4>
+                <p className="text-white/70">{exp.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
-        <motion.div variants={itemVariants} className="flex justify-center mt-12">
-          <a
-            href="/#/projects"
-            className="inline-block px-8 py-4 text-xl font-bold rounded-full bg-gradient-to-r from-teal-500 via-blue-500 to-indigo-500 text-white shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-200 border-2 border-white/10"
-          >
-            {t('seePortfolioBtn')}
-          </a>
+
+        <motion.div
+          className="mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
+        >
+          <h2 className="text-4xl font-bold text-white text-center mb-12">
+            <span className="flex items-center justify-center gap-3">
+              <AcademicCapIcon className="w-10 h-10 text-pink-400" />
+              {t('aboutEducationTitle')}
+            </span>
+          </h2>
+          <div className="space-y-8">
+            {education.map((edu, index) => (
+              <motion.div
+                key={index}
+                className="p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-pink-400/50 transition-all duration-300"
+                whileHover={{ scale: 1.02, y: -2 }}
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 1.1 + index * 0.1 }}
+              >
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <h3 className="text-2xl font-bold text-white mb-2 md:mb-0">{edu.degree}</h3>
+                  <span className="text-pink-400 font-semibold">{edu.period}</span>
+                </div>
+                <h4 className="text-xl text-pink-300 font-semibold mb-2">{edu.school}</h4>
+                <p className="text-white/70">{edu.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
-      </motion.div>
-    </section>
+      </div>
+    </div>
   );
 };
 

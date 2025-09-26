@@ -10,18 +10,22 @@ import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-    <HashRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/project/ankietDev" element={<AnkietDevPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-      <Footer />
-    </HashRouter>
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <HashRouter>
+        <Header />
+        <main className="relative">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/project/ankietDev" element={<AnkietDevPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </HashRouter>
+    </div>
   );
 }
 
