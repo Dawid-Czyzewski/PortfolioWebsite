@@ -2,7 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { RocketLaunchIcon, EyeIcon } from '@heroicons/react/24/outline';
-import mainPagePhoto from '../assets/ankietDev/mainPage.png';
+import mainPagePhotoAnkietDev from '../assets/ankietDev/mainPage.png';
+import mainPagePhotoNeoCasino from '../assets/neoCasino/mainPage.png';
 
 const ProjectsPage = () => {
   const { t } = useTranslation();
@@ -14,9 +15,15 @@ const ProjectsPage = () => {
   const projects = [
     {
       title: 'AnkietDev',
-      technologies: ['PHP', 'React', 'Tailwind'],
-      image: mainPagePhoto,
+      technologies: ['PHP', 'React', 'Tailwind', 'MySQL', 'JavaScript'],
+      image: mainPagePhotoAnkietDev,
       link: '#/project/ankietDev'
+    },
+    {
+      title: 'NeoCasino',
+      technologies: ['React', 'CSS', 'HTML', 'JavaScript'],
+      image: mainPagePhotoNeoCasino,
+      link: '#/project/neoCasino'
     }
   ];
 

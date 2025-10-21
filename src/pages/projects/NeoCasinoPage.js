@@ -2,20 +2,19 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { ArrowLeftIcon, EyeIcon, CodeBracketIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import mainPagePhoto from '../../assets/ankietDev/mainPage.png';
-import ankietDevContactPhoto from '../../assets/ankietDev/ankietDevContact.png';
-import ankietDevRegsterPhoto from '../../assets/ankietDev/register.png';
-import ankietDevDashboardPhoto from '../../assets/ankietDev/ankietDevDashboard.png';
-import ankietDevCreateNewPhoto from '../../assets/ankietDev/ankietDevCreateNew.png';
-import ankietDevStatisticsPhoto from '../../assets/ankietDev/ankietDevStatistics.png';
+import mainPagePhoto from '../../assets/neoCasino/mainPage.png';
+import neoCasinoSlotPhoto from '../../assets/neoCasino/neoCasinoSlot.png';
+import neoCasinoLegendPhoto from '../../assets/neoCasino/legend.png';
+import neoCasinoBlackJackPhoto from '../../assets/neoCasino/blackJack.png';
+import neoCasinoRoulettePhoto from '../../assets/neoCasino/neoCasinoRoulette.png';
 
-const AnkietDevPage = () => {
+const NeoCasinoPage = () => {
   const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
   const handleBack = () => window.history.back();
 
   useEffect(() => {
-    document.title = `${t('AnkietDev')}`;
+    document.title = `${t('NeoCasino')}`;
   }, [t]);
 
   useEffect(() => {
@@ -40,39 +39,33 @@ const AnkietDevPage = () => {
   const projectSections = [
     {
       image: mainPagePhoto,
-      alt: t("ankietDevMainTitle"),
-      title: t("ankietDevMainTitle"),
-      description: t("ankietDevMainText"),
+      alt: t("neoCasinoMainTitle"),
+      title: t("neoCasinoMainTitle"),
+      description: t("neoCasinoMainText"),
     },
     {
-      image: ankietDevContactPhoto,
-      alt: t("ankietDevContactTitle"),
-      title: t("ankietDevContactTitle"),
-      description: t("ankietDevContact"),
+      image: neoCasinoSlotPhoto,
+      alt: t("neoCasinoSlotTitle"),
+      title: t("neoCasinoSlotTitle"),
+      description: t("neoCasinoSlotText"),
     },
     {
-      image: ankietDevRegsterPhoto,
-      alt: t("ankietDevRegisterTitle"),
-      title: t("ankietDevRegisterTitle"),
-      description: t("ankietDevRegisterText"),
+      image: neoCasinoLegendPhoto,
+      alt: t("neoCasinoLegendTitle"),
+      title: t("neoCasinoLegendTitle"),
+      description: t("neoCasinoLegendText"),
     },
     {
-      image: ankietDevDashboardPhoto,
-      alt: t("ankietDevDashboardTitle"),
-      title: t("ankietDevDashboardTitle"),
-      description: t("ankietDevDashboardText"),
+      image: neoCasinoBlackJackPhoto,
+      alt: t("neoCasinoBlackJackTitle"),
+      title: t("neoCasinoBlackJackTitle"),
+      description: t("neoCasinoBlackJackText"),
     },
     {
-      image: ankietDevCreateNewPhoto,
-      alt: t("ankietDevCreateNewTitle"),
-      title: t("ankietDevCreateNewTitle"),
-      description: t("ankietDevCreateNewText"),
-    },
-    {
-      image: ankietDevStatisticsPhoto,
-      alt: t("ankietDevStatisticsTitle"),
-      title: t("ankietDevStatisticsTitle"),
-      description: t("ankietDevStatisticsText"),
+      image: neoCasinoRoulettePhoto,
+      alt: t("neoCasinoRouletteTitle"),
+      title: t("neoCasinoRouletteTitle"),
+      description: t("neoCasinoRouletteText"),
     }
   ];
 
@@ -87,7 +80,7 @@ const AnkietDevPage = () => {
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              AnkietDev
+              NeoCasino
             </span>
           </h1>
           <motion.button
@@ -108,12 +101,12 @@ const AnkietDevPage = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">{t('ankietDevTitle')}</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">{t('neoCasinoTitle')}</h2>
             <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-6 text-center">
-              {t('ankietDevDescription')}
+              {t('neoCasinoDescription')}
             </p>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
-              {['PHP', 'React', 'Tailwind', 'JavaScript', 'HTML', 'MySQL'].map((tech, index) => (
+              {['React', 'CSS', 'JavaScript', 'HTML'].map((tech, index) => (
                 <span
                   key={tech}
                   className="px-3 sm:px-4 py-1 sm:py-2 bg-white/10 border border-white/20 rounded-full text-white/80 text-xs sm:text-sm font-medium"
@@ -176,7 +169,7 @@ const AnkietDevPage = () => {
           transition={{ duration: 0.8, delay: 1.0 }}
         >
           <motion.a
-            href="https://satoshidc.cfolks.pl/"
+            href="https://casino.satoshidc.cfolks.pl/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl sm:rounded-2xl hover:from-purple-500 hover:to-blue-500 transition-all duration-300 text-sm sm:text-base cursor-pointer"
@@ -187,7 +180,7 @@ const AnkietDevPage = () => {
             {t('seeWebsite')}
           </motion.a>
           <motion.a
-            href="https://github.com/Dawid-Czyzewski/AnkietDev"
+            href="https://github.com/Dawid-Czyzewski/NeoCasino"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/30 text-white font-semibold rounded-xl sm:rounded-2xl hover:border-white/60 hover:bg-white/10 transition-all duration-300 backdrop-blur-sm text-sm sm:text-base cursor-pointer"
@@ -237,4 +230,4 @@ const AnkietDevPage = () => {
   );
 };
 
-export default AnkietDevPage;
+export default NeoCasinoPage;

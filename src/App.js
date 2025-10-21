@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ProjectsPage from './pages/ProjectsPage';
+import NeoCasinoPage from './pages/projects/NeoCasinoPage';
 import AnkietDevPage from './pages/projects/AnkietDevPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/project/ankietDev" element={<AnkietDevPage />} />
+            <Route path="/project/neoCasino" element={<NeoCasinoPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>

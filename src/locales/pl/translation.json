@@ -114,5 +114,17 @@
   "ankietDevRegisterTitle": "Rejestracja",
   "ankietDevDashboardTitle": "Panel użytkownika",
   "ankietDevCreateNewTitle": "Tworzenie ankiety",
-  "ankietDevStatisticsTitle": "Statystyki"
+  "ankietDevStatisticsTitle": "Statystyki",
+  "neoCasinoMainTitle": "Strona główna",
+  "neoCasinoDescription": "NeoCasino to gra przeglądarkowa symulująca kasyno online, stworzona przy użyciu React. Gra oferuje różnorodne gry, zapewniając użytkownikom rozrywkę i emocje związane z kasynem bez ryzyka utraty prawdziwych pieniędzy.",
+  "neoCasinoTitle": "NeoCasino - Gra przeglądarkowa",
+  "neoCasinoMainText": "NeoCasino to gra przeglądarkowa, która symuluje gry hazardowe takie jak ruletka, blackjack czy sloty. Gra została stworzona z wykorzystaniem biblioteki React, co zapewnia płynne działanie i atrakcyjny interfejs użytkownika. NeoCasino oferuje różnorodne gry, które dostarczają użytkownikom rozrywki i emocji związanych z kasynem, bez ryzyka utraty prawdziwych pieniędzy.",
+  "neoCasinoSlotTitle": "Maszynowa slotowa",
+  "neoCasinoSlotText": "Maszynowa slotowa to jedna z gier dostępnych w NeoCasino. Jest to klasyczna gra automatyowa 3x3 z różnymi symbolami. Gra oferuje prostą i przyjemną rozgrywkę, idealną dla miłośników kasynowych slotów.",
+  "neoCasinoLegendTitle": "Legenda gry",
+  "neoCasinoLegendText": "Legenda gry to sekcja w NeoCasino, która wyjaśnia zasady i mechanikę gier dostępnych na platformie. Przydatne dla graczy, którzy nie mieli wcześniej styczności z takimi grami.",
+  "neoCasinoBlackJackTitle": "Blackjack",
+  "neoCasinoBlackJackText": "Blackjack to popularna gra karciana dostępna w NeoCasino. Celem gry jest uzyskanie sumy punktów jak najbliższej 21, bez jej przekraczania. Gra oferuje emocjonującą rozgrywkę i wymaga strategicznego myślenia.",
+  "neoCasinoRouletteTitle": "Ruletka",
+  "neoCasinoRouletteText": "Ruletka to klasyczna gra kasynowa dostępna w NeoCasino. Wersja ruletki w tym serwisie została zaprojektowana w stylu otwierania skrzynek znanym z gry Counter-Strike 2, co nadaje jej wyjątkowy klimat i dynamikę. Gracze mogą obstawiać różne zakłady i cieszyć się emocjonującą rozgrywką pełną napięcia i losowych emocji."
 }

@@ -114,5 +114,17 @@
   "ankietDevRegisterTitle": "Registration",
   "ankietDevDashboardTitle": "User panel",
   "ankietDevCreateNewTitle": "Creating survey",
-  "ankietDevStatisticsTitle": "Statistics"
+  "ankietDevStatisticsTitle": "Statistics",
+  "neoCasinoMainTitle": "Main page",
+  "neoCasinoDescription": "NeoCasino is a browser game simulating an online casino, created using React. The game offers a variety of games, providing users with entertainment and the excitement of a casino without the risk of losing real money.",
+  "neoCasinoTitle": "NeoCasino - Browser Game",
+  "neoCasinoMainText": "NeoCasino is a browser game that simulates gambling games such as roulette, blackjack, and slots. The game was created using the React library, ensuring smooth performance and an attractive user interface. NeoCasino offers a variety of games that provide users with entertainment and the excitement of a casino without the risk of losing real money.",
+  "neoCasinoSlotTitle": "Slot Machine",
+  "neoCasinoSlotText": "The slot machine is one of the games available in NeoCasino. It is a classic 3x3 slot game with various symbols. The game offers simple and enjoyable gameplay, perfect for fans of casino slots.",
+  "neoCasinoLegendTitle": "Game Legend",
+  "neoCasinoLegendText": "The game legend is a section in NeoCasino that explains the rules and mechanics of the games available on the platform. It is useful for players who have not previously encountered such games.",
+  "neoCasinoBlackJackTitle": "Blackjack",
+  "neoCasinoBlackJackText": "Blackjack is a popular card game available in NeoCasino. The objective of the game is to get a hand value as close to 21 as possible without exceeding it, while also having a higher value than the dealer's hand.",
+  "neoCasinoRouletteTitle": "Roulette",
+  "neoCasinoRouletteText": "Roulette is a classic casino game available at NeoCasino. This version of roulette is designed in the style of case openings from Counter-Strike 2, giving it a unique atmosphere and dynamic feel. Players can place various bets and enjoy an exciting gameplay experience full of tension and random thrills."
 }
