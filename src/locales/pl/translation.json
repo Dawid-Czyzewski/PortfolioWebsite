@@ -126,5 +126,17 @@
   "neoCasinoBlackJackTitle": "Blackjack",
   "neoCasinoBlackJackText": "Blackjack to popularna gra karciana dostępna w NeoCasino. Celem gry jest uzyskanie sumy punktów jak najbliższej 21, bez jej przekraczania. Gra oferuje emocjonującą rozgrywkę i wymaga strategicznego myślenia.",
   "neoCasinoRouletteTitle": "Ruletka",
-  "neoCasinoRouletteText": "Ruletka to klasyczna gra kasynowa dostępna w NeoCasino. Wersja ruletki w tym serwisie została zaprojektowana w stylu otwierania skrzynek znanym z gry Counter-Strike 2, co nadaje jej wyjątkowy klimat i dynamikę. Gracze mogą obstawiać różne zakłady i cieszyć się emocjonującą rozgrywką pełną napięcia i losowych emocji."
+  "neoCasinoRouletteText": "Ruletka to klasyczna gra kasynowa dostępna w NeoCasino. Wersja ruletki w tym serwisie została zaprojektowana w stylu otwierania skrzynek znanym z gry Counter-Strike 2, co nadaje jej wyjątkowy klimat i dynamikę. Gracze mogą obstawiać różne zakłady i cieszyć się emocjonującą rozgrywką pełną napięcia i losowych emocji.",
+  "devLinkTitle": "DevLink - Platforma do znajdowania osób do wspólnego robienia projektów i dzielenia się wiedzą",
+  "devLinkDescription": "DevLink to nowoczesna platforma webowa umożliwająca znajdowanie osób do wspólnego robienia projektów i dzielenia się wiedzą. Zbudowana w PHP z wykorzystaniem React i Tailwind CSS.",
+  "devLinkMainTitle": "Strona główna",
+  "devLinkMainText": "DevLink to platforma, to platforma do znajdowania osób do wspólnego robienia projektów i dzielenia się wiedzą.",
+  "devLinkLoginAndRegisterTitle": "Logowanie i rejestracja",
+  "devLinkLoginAndRegisterText": "DevLink oferuje niezwykle szybką i łatwą rejestrację. Konto wymaga potwierdzenia poprzez e-mail, co zapewnia bezpieczeństwo platformy. Używanie nicku gwarantuje pełną anonimowość użytkowników, dzięki czemu można swobodnie dzielić się wiedzą i współpracować nad projektami bez obaw o prywatność.",
+  "devLinkContactTitle": "Kontakt",
+  "devLinkContactText": "DevLink posiada podstronę kontaktową z formularzem, w której można zgłosić prośbę o pomoc lub nawiązać współpracę z twórcą. Użytkownicy mogą również przekazać sugestie dotyczące funkcji, które powinny zostać dodane do platformy.",
+  "devLinkTermsOfServiceTitle": "Regulamin",
+  "devLinkTermsOfServiceText": "Regulamin to dokument, który określa zasady i warunki korzystania z platformy. Zawiera informacje o prawach i obowiązkach użytkowników, a także o zasadach zachowania poufności i ochrony danych osobowych.",
+  "devLinkProfileTitle": "Profil",
+  "devLinkProfileText": "Profil to miejsce, w którym użytkownik może zarządzać swoim profilem oraz ogłoszeniami. Może dodac informacje  oswoich umiejetnościach a takze zarzadząć czatami"
 }

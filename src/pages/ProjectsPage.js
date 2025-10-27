@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { RocketLaunchIcon, EyeIcon } from '@heroicons/react/24/outline';
 import mainPagePhotoAnkietDev from '../assets/ankietDev/mainPage.png';
 import mainPagePhotoNeoCasino from '../assets/neoCasino/mainPage.png';
+import mainPagePhotoDevLink from '../assets/devLink/mainPage.png';
 
 const ProjectsPage = () => {
   const { t } = useTranslation();
@@ -24,12 +25,18 @@ const ProjectsPage = () => {
       technologies: ['React', 'CSS', 'HTML', 'JavaScript'],
       image: mainPagePhotoNeoCasino,
       link: '#/project/neoCasino'
+    },
+    {
+      title: 'DevLink',
+      technologies: ['PHP', 'React', 'Tailwind', 'MySQL', 'JavaScript'],
+      image:  mainPagePhotoDevLink,
+      link: '#/project/devLink'
     }
   ];
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto">``
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}

@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage';
 import ProjectsPage from './pages/ProjectsPage';
 import NeoCasinoPage from './pages/projects/NeoCasinoPage';
 import AnkietDevPage from './pages/projects/AnkietDevPage';
+import DevLinkPage from './pages/projects/DevLinkPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/project/ankietDev" element={<AnkietDevPage />} />
             <Route path="/project/neoCasino" element={<NeoCasinoPage />} />
+            <Route path="/project/devLink" element={<DevLinkPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
