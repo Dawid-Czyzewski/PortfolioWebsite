@@ -126,5 +126,17 @@
   "neoCasinoBlackJackTitle": "Blackjack",
   "neoCasinoBlackJackText": "Blackjack is a popular card game available in NeoCasino. The objective of the game is to get a hand value as close to 21 as possible without exceeding it, while also having a higher value than the dealer's hand.",
   "neoCasinoRouletteTitle": "Roulette",
-  "neoCasinoRouletteText": "Roulette is a classic casino game available at NeoCasino. This version of roulette is designed in the style of case openings from Counter-Strike 2, giving it a unique atmosphere and dynamic feel. Players can place various bets and enjoy an exciting gameplay experience full of tension and random thrills."
+  "neoCasinoRouletteText": "Roulette is a classic casino game available at NeoCasino. This version of roulette is designed in the style of case openings from Counter-Strike 2, giving it a unique atmosphere and dynamic feel. Players can place various bets and enjoy an exciting gameplay experience full of tension and random thrills.",
+  "devLinkTitle": "DevLink - Platform for finding people to work on projects together and share knowledge",
+  "devLinkDescription": "DevLink is a modern web platform for finding people to work on projects together and share knowledge. Built in PHP using React and Tailwind CSS.",
+  "devLinkMainTitle": "Main page",
+  "devLinkMainText": "DevLink is a platform for finding people to work on projects together and share knowledge.",
+  "devLinkLoginAndRegisterTitle": "Login and registration",
+  "devLinkLoginAndRegisterText": "DevLink offers an extremely fast and easy registration. Account requires email confirmation, which ensures platform security. Using a nickname guarantees full user anonymity, allowing users to freely share knowledge and collaborate on projects without privacy concerns.",
+  "devLinkContactTitle": "Contact",
+  "devLinkContactText": "DevLink has a contact page with a form where you can request help or propose collaboration with the creator. Users can also submit suggestions for features that should be added to the platform.",
+  "devLinkTermsOfServiceTitle": "Terms of Service",
+  "devLinkTermsOfServiceText": "Terms of Service is a document that defines the rules and conditions for using the platform. It contains information about user rights and obligations, as well as principles of confidentiality and personal data protection.",
+  "devLinkProfileTitle": "Profile",
+  "devLinkProfileText": "Profile is a place where users can manage their profile and announcements. They can add information about their skills and manage chats."
 }
