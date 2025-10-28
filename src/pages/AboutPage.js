@@ -1,8 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
-import { CodeBracketIcon, AcademicCapIcon, BriefcaseIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
+import { CodeBracketIcon, AcademicCapIcon, BriefcaseIcon, RocketLaunchIcon, TrophyIcon, GlobeAltIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 import mainPhoto from '../assets/mainPhoto.jpg';
+import { getCertificates } from '../data/certificates';
+import { getLanguages } from '../data/languages';
+import { skills } from '../data/skills';
+import { getExperience } from '../data/experience';
+import { getEducation } from '../data/education';
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -11,53 +16,19 @@ const AboutPage = () => {
     document.title = `${t('about')}`;
   }, [t]);
 
-  const skills = [
-    'JavaScript', 'React', 'Node.js', 'HTML', 'CSS', 'Git', 'PHP', 'Symfony', 
-    'Java', 'Spring Boot', 'MySQL', 'jQuery', 'Tailwind', 'WordPress', 
-    'WooCommerce', 'Flutter', 'Dart'
-  ];
+  const experience = getExperience(t);
+  const education = getEducation(t);
+  const certificatesData = getCertificates(t);
+  const languagesData = getLanguages(t);
 
-  const experience = [
-    {
-      title: t('experienceZirto.title'),
-      company: t('experienceZirto.company'),
-      period: t('experienceZirto.period'),
-      description: t('experienceZirto.description')
-    },
-    {
-      title: t('experienceIRONteam.title'),
-      company: t('experienceIRONteam.company'),
-      period: t('experienceIRONteam.period'),
-      description: t('experienceIRONteam.description')
-    },
-    {
-      title: t('experienceBluSoft.title'),
-      company: t('experienceBluSoft.company'),
-      period: t('experienceBluSoft.period'),
-      description: t('experienceBluSoft.description')
-    },
-    {
-      title: t('experienceVocale.title'),
-      company: t('experienceVocale.company'),
-      period: t('experienceVocale.period'),
-      description: t('experienceVocale.description')
-    }
-  ];
-
-  const education = [
-    {
-      degree: t('educationWSG.degree'),
-      school: t('educationWSG.school'),
-      period: t('educationWSG.period'),
-      description: t('educationWSG.description')
-    },
-    {
-      degree: t('educationZSM.degree'),
-      school: t('educationZSM.school'),
-      period: t('educationZSM.period'),
-      description: t('educationZSM.description')
-    }
-  ];
+  const handleDownload = (downloadUrl, fileName) => {
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
@@ -215,6 +186,81 @@ const AboutPage = () => {
                 </div>
                 <h4 className="text-xl text-pink-300 font-semibold mb-2">{edu.school}</h4>
                 <p className="text-white/70">{edu.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+        >
+          <h2 className="text-4xl font-bold text-white text-center mb-12">
+            <span className="flex items-center justify-center gap-3">
+              <TrophyIcon className="w-10 h-10 text-yellow-400" />
+              {t('aboutCertificatesTitle')}
+            </span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {certificatesData.map((cert, index) => (
+              <motion.div
+                key={cert.id}
+                className="p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-yellow-400/50 transition-all duration-300"
+                whileHover={{ scale: 1.02, y: -2 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.3 + index * 0.1 }}
+              >
+                <h3 className="text-2xl font-bold text-white mb-3">{cert.name}</h3>
+                <div className="mb-4">
+                  <h4 className="text-lg text-yellow-300 font-semibold mb-1">{cert.issuer}</h4>
+                  <span className="text-yellow-400 font-medium">{cert.date}</span>
+                </div>
+                <p className="text-white/70 mb-4">{cert.description}</p>
+                {cert.downloadUrl && (
+                  <motion.button
+                    onClick={() => handleDownload(cert.downloadUrl, cert.fileName)}
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-xl hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 cursor-pointer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <ArrowDownTrayIcon className="w-5 h-5" />
+                    {t('downloadCertificate')}
+                  </motion.button>
+                )}
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.4 }}
+        >
+          <h2 className="text-4xl font-bold text-white text-center mb-12">
+            <span className="flex items-center justify-center gap-3">
+              <GlobeAltIcon className="w-10 h-10 text-green-400" />
+              {t('aboutLanguagesTitle')}
+            </span>
+          </h2>
+          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+            {languagesData.map((lang, index) => (
+              <motion.div
+                key={lang.id}
+                className="p-4 px-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 hover:border-green-400/50 transition-all duration-300"
+                whileHover={{ scale: 1.05, y: -2 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.5 + index * 0.1 }}
+              >
+                <div className="flex items-center gap-4">
+                  <h3 className="text-xl font-bold text-white">{lang.name}</h3>
+                  <span className="text-green-400 font-semibold">{lang.level}</span>
+                </div>
               </motion.div>
             ))}
           </div>

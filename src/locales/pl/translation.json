@@ -138,5 +138,32 @@
   "devLinkTermsOfServiceTitle": "Regulamin",
   "devLinkTermsOfServiceText": "Regulamin to dokument, który określa zasady i warunki korzystania z platformy. Zawiera informacje o prawach i obowiązkach użytkowników, a także o zasadach zachowania poufności i ochrony danych osobowych.",
   "devLinkProfileTitle": "Profil",
-  "devLinkProfileText": "Profil to miejsce, w którym użytkownik może zarządzać swoim profilem oraz ogłoszeniami. Może dodac informacje  oswoich umiejetnościach a takze zarzadząć czatami"
+  "devLinkProfileText": "Profil to miejsce, w którym użytkownik może zarządzać swoim profilem oraz ogłoszeniami. Może dodac informacje  oswoich umiejetnościach a takze zarzadząć czatami",
+  "aboutCertificatesTitle": "Certyfikaty",
+  "aboutLanguagesTitle": "Języki",
+  "downloadCertificate": "Pobierz certyfikat",
+  "certificate1": {
+    "name": "EnglishScore certificate",
+    "issuer": "EnglishScore",
+    "date": "2025",
+    "description": "Certyfikat potwierdzający umiejętności w języku angielskim"
+  },
+  "certificate2": {
+    "name": "Revas - Business Simulation Games Certificate",
+    "issuer": "Revas - Business Simulation Games",
+    "date": "2025",
+    "description": "Certyfikat potwierdzający umiejętności w prowadzeniu firmy informatycznej"
+  },
+  "languagePolish": {
+    "name": "Polski",
+    "level": "Ojczysty"
+  },
+  "languageEnglish": {
+    "name": "Angielski",
+    "level": "B2/C1"
+  },
+  "languageJapanese": {
+    "name": "Japoński",
+    "level": "N5"
+  }
 }

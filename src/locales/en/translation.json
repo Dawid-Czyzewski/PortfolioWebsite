@@ -138,5 +138,32 @@
   "devLinkTermsOfServiceTitle": "Terms of Service",
   "devLinkTermsOfServiceText": "Terms of Service is a document that defines the rules and conditions for using the platform. It contains information about user rights and obligations, as well as principles of confidentiality and personal data protection.",
   "devLinkProfileTitle": "Profile",
-  "devLinkProfileText": "Profile is a place where users can manage their profile and announcements. They can add information about their skills and manage chats."
+  "devLinkProfileText": "Profile is a place where users can manage their profile and announcements. They can add information about their skills and manage chats.",
+  "aboutCertificatesTitle": "Certificates",
+  "aboutLanguagesTitle": "Languages",
+  "downloadCertificate": "Download certificate",
+  "certificate1": {
+    "name": "EnglishScore certificate",
+    "issuer": "EnglishScore",
+    "date": "2025",
+    "description": "Certificate confirming English language skills"
+  },
+  "certificate2": {
+    "name": "Revas - Business Simulation Games Certificate",
+    "issuer": "Revas - Business Simulation Games",
+    "date": "2025",
+    "description": "Certificate confirming skills in running a computer company"
+  },
+  "languagePolish": {
+    "name": "Polish",
+    "level": "Native"
+  },
+  "languageEnglish": {
+    "name": "English",
+    "level": "B2/C1"
+  },
+  "languageJapanese": {
+    "name": "Japanese",
+    "level": "N5"
+  }
 }
