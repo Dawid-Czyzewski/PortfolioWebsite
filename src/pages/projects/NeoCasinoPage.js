@@ -7,6 +7,8 @@ import neoCasinoSlotPhoto from '../../assets/neoCasino/neoCasinoSlot.png';
 import neoCasinoLegendPhoto from '../../assets/neoCasino/legend.png';
 import neoCasinoBlackJackPhoto from '../../assets/neoCasino/blackJack.png';
 import neoCasinoRoulettePhoto from '../../assets/neoCasino/neoCasinoRoulette.png';
+import neoCasinoCrashPhoto from '../../assets/neoCasino/neoCasinoCrash.png';
+import neoCasinoScratchCardPhoto from '../../assets/neoCasino/neoCasinoScratchCard.png';
 
 const NeoCasinoPage = () => {
   const { t } = useTranslation();
@@ -66,6 +68,18 @@ const NeoCasinoPage = () => {
       alt: t("neoCasinoRouletteTitle"),
       title: t("neoCasinoRouletteTitle"),
       description: t("neoCasinoRouletteText"),
+    },
+    {
+      image: neoCasinoScratchCardPhoto,
+      alt: t("neoCasinoScratchCardTitle"),
+      title: t("neoCasinoScratchCardTitle"),
+      description: t("neoCasinoScratchCardText"),
+    },
+    {
+      image: neoCasinoCrashPhoto,
+      alt: t("neoCasinoCrashTitle"),
+      title: t("neoCasinoCrashTitle"),
+      description: t("neoCasinoCrashText"),
     }
   ];
 
