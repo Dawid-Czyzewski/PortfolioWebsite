@@ -53,7 +53,7 @@
   "footerDescription": "I create modern web applications with a passion for clean code and innovative solutions.",
   "footerNavigation": "Navigation",
   "footerContact": "Contact",
-  "footerCopyright": "© 2025 Dawid Czyżewski. All rights reserved.",
+  "footerCopyright": "© {{year}} Dawid Czyżewski. All rights reserved.",
   "footerMadeWith": "Made with ❤️ using React & Tailwind CSS",
   "aboutGreeting": "Hi! I'm Dawid",
   "aboutDescription": "I am a programming enthusiast in creating modern web and mobile applications. I specialize in PHP, JavaScript, React and Flutter, but I like to experiment with different technologies.",

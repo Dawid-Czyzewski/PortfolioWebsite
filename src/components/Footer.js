@@ -85,7 +85,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/50 text-sm">
-            {t('footerCopyright')}
+            {t('footerCopyright', { year: new Date().getFullYear() })}
           </p>
           <p className="text-white/50 text-sm mt-2 md:mt-0">
             {t('footerMadeWith')}
