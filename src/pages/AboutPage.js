@@ -10,13 +10,14 @@ import { getExperience } from '../data/experience';
 import { getEducation } from '../data/education';
 
 const AboutPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
 
   useEffect(() => {
     document.title = `${t('about')}`;
   }, [t]);
 
-  const experience = getExperience(t);
+  const experience = getExperience(t, lang);
   const education = getEducation(t);
   const certificatesData = getCertificates(t);
   const languagesData = getLanguages(t);
