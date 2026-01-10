@@ -3,7 +3,7 @@ import { BriefcaseIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 
 const AboutProfile = ({ photo, alt, greeting, description, experience, contactMe }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-20">
       <motion.div
         className="flex justify-center"
         initial={{ opacity: 0, x: -30 }}
@@ -11,11 +11,11 @@ const AboutProfile = ({ photo, alt, greeting, description, experience, contactMe
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-3xl blur-2xl opacity-30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-3xl blur-2xl opacity-30 w-80 h-60"></div>
           <img
             src={photo}
             alt={alt}
-            className="relative w-80 h-80 object-cover rounded-3xl border-4 border-white/20 shadow-2xl"
+            className="relative w-90 h-100 object-cover object-top rounded-3xl border-4 border-white/20 shadow-2xl sm:w-90 sm:h-100 lg:w-120 lg:h-140"
           />
         </div>
       </motion.div>
