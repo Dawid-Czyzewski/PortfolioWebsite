@@ -66,30 +66,37 @@
   "aboutContactMe": "Skontaktuj się ze mną",
   "aboutSkills": "Umiejętności",
   "aboutExperienceTitle": "Doświadczenie",
+  "viewDetails": "Zobacz szczegóły",
+  "description": "Opis",
+  "details": "Szczegóły",
   "aboutEducationTitle": "Wykształcenie",
   "experienceZirto": {
     "title": "PHP Developer",
     "period": "6 miesięcy - Obecnie",
     "company": "Zirto",
-    "description": "Rozwój aplikacji webowych w PHP"
+    "description": "Rozwój aplikacji webowych w PHP",
+    "details": "Specjalizuję się w rozwoju aplikacji webowych wykorzystując Symfony, vanilla PHP oraz WordPress. Realizowałem kompleksowe projekty WordPress od etapu projektowania do wdrożenia, zapewniając optymalizację wydajności oraz implementację zaawansowanych mechanizmów bezpieczeństwa. Samodzielnie zaprojektowałem i zaimplementowałem projekt od podstaw w frameworku Symfony. Równolegle prowadziłem rozwój kolejnego projektu w czystym PHP. Oba projekty realizowałem w pełnym zakresie full-stack, implementując frontend w React. Pełnię rolę głównego programisty, pracując bezpośrednio z klientami poprzez bezpośrednią komunikację oraz uczestnictwo w spotkaniach biznesowych jako reprezentant techniczny. W zakresie moich obowiązków znajduje się również tworzenie skryptów automatyzacyjnych w Pythonie, implementacja integracji z zewnętrznymi systemami płatności (PayPal) oraz komunikacji (SMS API), a także zapewnienie jakości kodu poprzez pisanie testów jednostkowych w Symfony."
   },
   "experienceIRONteam": {
     "title": "PHP Developer",
     "period": "8 miesięcy",
     "company": "IRONteam",
-    "description": "Rozwój aplikacji medycznych w PHP"
+    "description": "Rozwój aplikacji medycznych w PHP",
+    "details": "Pracowałem zarówno w czystym PHP, jak i w frameworku Symfony. Był to pierwszy projekt, w którym pracowałem samodzielnie. Jako mid developer przejąłem odpowiedzialność za cały projekt w roli full-stack developera, chociaż frontend był rzadziej rozwijany w porównaniu do backendu. Rozwijałem system medyczny dla przychodni i szpitali, pracując z rozbudowaną bazą danych zawierającą kilka milionów rekordów. Projektowałem i implementowałem API dla zewnętrznych integracji. Opanowałem również SOAP (Web Services) API. Dołączając do już rozwiniętego projektu, musiałem pracować z legacy code, często refaktoryzując i poprawiając kod napisany wcześniej przez innych deweloperów."
   },
   "experienceBluSoft": {
     "title": "Junior PHP Developer",
     "period": "1 rok i 7 miesięcy",
     "company": "BluSoft",
-    "description": "Rozwój aplikacji webowych i mobilnych"
+    "description": "Rozwój aplikacji webowych i mobilnych",
+    "details": "Pracowałem w małym zespole jako full-stack developer odpowiedzialny za backend oraz frontend w zakresie JavaScript. Pracowaliśmy w metodologii Agile, co pozwoliło mi zdobyć doświadczenie w pracy w zwinnych zespołach deweloperskich. Rozwijałem platformę streamingową typu PPV (Pay-Per-View) podobną do Twitch.tv. Podczas pracy opanowałem integrację systemów płatności oraz implementację komunikacji czasu rzeczywistego z wykorzystaniem WebSocket w Express.js. Specjalizowałem się w pracy z czystym PHP, administrowałem bazą danych oraz projektowałem architekturę backendu zgodnie z wymaganiami biznesowymi."
   },
   "experienceVocale": {
     "title": "Junior Flutter Developer",
     "period": "2 lata",
     "company": "Vocale",
-    "description": "Rozwój aplikacji mobilnych w Flutter"
+    "description": "Rozwój aplikacji mobilnych w Flutter",
+    "details": "Specjalizowałem się w rozwoju aplikacji mobilnych wykorzystując framework Flutter. Przez okres dwóch miesięcy pełniłem rolę team leadera, zarządzając zespołem programistów i odpowiadając za code review. Tworzyłem aplikacje mobilne na podstawie projektów UI/UX w Figmie, realizując projekty dla zróżnicowanych branż - od aplikacji kateringowych po rozwiązania typu Trello. W trakcie pracy opanowałem zaawansowane techniki zarządzania stanem aplikacji z wykorzystaniem Bloc, a także najlepsze praktyki w zakresie tworzenia aplikacji mobilnych. Uczestniczyłem w tworzeniu testów end-to-end oraz implementacji integracji z backendem poprzez REST API. W ciągu dwóch lat pracy systematycznie rozwijałem swoje kompetencje poprzez udział w licznych szkoleniach z zakresu clean code oraz zaawansowanego programowania aplikacji mobilnych."
   },
   "educationWSG": {
     "degree": "Informatyka",

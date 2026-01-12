@@ -66,30 +66,37 @@
   "aboutContactMe": "Contact me",
   "aboutSkills": "Skills",
   "aboutExperienceTitle": "Experience",
+  "viewDetails": "View details",
+  "description": "Description",
+  "details": "Details",
   "aboutEducationTitle": "Education",
   "experienceZirto": {
     "title": "PHP Developer",
     "period": "6 months - Currently",
     "company": "Zirto",
-    "description": "Development of web applications in PHP"
+    "description": "Development of web applications in PHP",
+    "details": "I specialize in web application development using Symfony, vanilla PHP, and WordPress. I deliver comprehensive WordPress projects from design to deployment, ensuring performance optimization and implementation of advanced security mechanisms. I independently designed and implemented a project from the ground up in the Symfony framework. Simultaneously, I led the development of another project in vanilla PHP. I developed both projects full-stack, implementing frontend in React. I serve as the lead developer, working directly with clients through direct communication and participating in business meetings as a technical representative. My responsibilities also include creating automation scripts in Python, implementing integrations with external payment systems (PayPal) and communication services (SMS API), as well as ensuring code quality through writing unit tests in Symfony."
   },
   "experienceIRONteam": {
     "title": "PHP Developer",
     "period": "8 months",
     "company": "IRONteam",
-    "description": "Development of medical applications in PHP"
+    "description": "Development of medical applications in PHP",
+    "details": "I worked in both vanilla PHP and the Symfony framework. This was the first project where I worked independently. As a mid developer, I took responsibility for the entire project as a full-stack developer, although frontend development was less frequent compared to backend. I developed a medical system for clinics and hospitals, working with an extensive database containing several million records. I designed and implemented APIs for external integrations. I also mastered SOAP (Web Services) API. Joining an already developed project, I had to work with legacy code, often refactoring and improving code written earlier by other developers."
   },
   "experienceBluSoft": {
     "title": "Junior PHP Developer",
     "period": "1 year and 7 months",
     "company": "BluSoft",
-    "description": "Development of web and mobile applications"
+    "description": "Development of web and mobile applications",
+    "details": "I worked in a small team as a full-stack developer responsible for backend and frontend in JavaScript. We worked in Agile methodology, which allowed me to gain experience working in agile development teams. I developed a PPV (Pay-Per-View) streaming platform similar to Twitch.tv. During my work, I mastered payment system integration and real-time communication implementation using WebSocket in Express.js. I specialized in working with vanilla PHP, managed databases, and designed backend architecture according to business requirements."
   },
   "experienceVocale": {
     "title": "Junior Flutter Developer",
     "period": "2 years",
     "company": "Vocale",
-    "description": "Development of mobile applications in Flutter"
+    "description": "Development of mobile applications in Flutter",
+    "details": "I specialized in mobile application development using the Flutter framework. For a period of two months, I served as a team leader, managing a team of programmers and conducting code reviews. I developed mobile applications based on UI/UX designs in Figma, delivering projects for diverse industries - from catering applications to Trello-like solutions. During my work, I mastered advanced state management techniques using Bloc, as well as best practices in mobile application development. I participated in creating end-to-end tests and implementing backend integration through REST API. Over the course of two years, I systematically developed my skills through participation in numerous training sessions on clean code and advanced mobile application programming."
   },
   "educationWSG": {
     "degree": "Computer Science",

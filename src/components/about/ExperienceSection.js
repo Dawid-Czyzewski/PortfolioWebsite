@@ -1,8 +1,17 @@
 import { motion } from 'framer-motion';
 import { BriefcaseIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import SectionTitle from './SectionTitle';
 
 const ExperienceSection = ({ experience, title }) => {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const handleViewDetails = (expId) => {
+    navigate(`/experience/${expId}`);
+  };
+
   return (
     <motion.div
       className="mb-20"
@@ -25,8 +34,15 @@ const ExperienceSection = ({ experience, title }) => {
               <h3 className="text-2xl font-bold text-white mb-2 md:mb-0">{exp.title}</h3>
               <span className="text-purple-400 font-semibold">{exp.period}</span>
             </div>
-            <h4 className="text-xl text-blue-300 font-semibold mb-2">{exp.company}</h4>
-            <p className="text-white/70">{exp.description}</p>
+            <h4 className="text-xl text-blue-300 font-semibold mb-4">{exp.company}</h4>
+            <motion.button
+              onClick={() => handleViewDetails(exp.id)}
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl hover:from-purple-500 hover:to-blue-500 transition-all duration-300 cursor-pointer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {t('viewDetails')}
+            </motion.button>
           </motion.div>
         ))}
       </div>
