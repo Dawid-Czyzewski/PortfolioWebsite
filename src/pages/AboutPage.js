@@ -50,7 +50,7 @@ const AboutPage = () => {
           contactMe={t('aboutContactMe')}
         />
 
-        <SkillsSection skills={skills} title={t('aboutSkills')} />
+        <SkillsSection skills={skills} title={t('aboutSkills')} t={t} />
 
         <ExperienceSection experience={experience} title={t('aboutExperienceTitle')} />
 

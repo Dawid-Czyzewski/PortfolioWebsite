@@ -1,12 +1,15 @@
 export const skills = [
   'JavaScript',
   'React',
-  'Node.js',
+  'Docker',
+  'Redis',
+  'TypeScript',
   'HTML',
   'CSS',
   'Git',
   'PHP',
   'Symfony',
+  'PHPUnit',
   'Java',
   'Spring Boot',
   'MySQL',
@@ -15,5 +18,7 @@ export const skills = [
   'WordPress',
   'WooCommerce',
   'Flutter',
-  'Dart'
+  'Dart',
+  { key: 'unitTests', translate: true },
+  { key: 'integrationTests', translate: true }
 ];

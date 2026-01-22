@@ -181,5 +181,7 @@
   "languageJapanese": {
     "name": "Japoński",
     "level": "N5"
-  }
+  },
+  "unitTests": "Testy jednostkowe",
+  "integrationTests": "Testy integracyjne"
 }
