@@ -8,6 +8,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import NeoCasinoPage from './pages/projects/NeoCasinoPage';
 import AnkietDevPage from './pages/projects/AnkietDevPage';
 import DevLinkPage from './pages/projects/DevLinkPage';
+import TrackerProPage from './pages/projects/TrackerProPage';
 import ExperienceDetailPage from './pages/experience/ExperienceDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/project/ankietDev" element={<AnkietDevPage />} />
             <Route path="/project/neoCasino" element={<NeoCasinoPage />} />
             <Route path="/project/devLink" element={<DevLinkPage />} />
+            <Route path="/project/trackerPro" element={<TrackerProPage />} />
             <Route path="/experience/:id" element={<ExperienceDetailPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

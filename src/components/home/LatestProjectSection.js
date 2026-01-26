@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { EyeIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from 'react-i18next';
-import mainPagePhotoDevLink from '../../assets/devLink/mainPage.png';
+import mainPagePhotoTrackerPro from '../../assets/trackerPro/dashboard.png';
 
 const LatestProjectSection = ({ onViewportEnter, onViewportLeave }) => {
   const { t } = useTranslation();
 
-  const technologies = ['PHP', 'React', 'Tailwind', 'MySQL', 'JavaScript'];
+  const technologies = ['TypeScript', 'React', 'Symfony', 'Docker', 'PHPUnit'];
 
   return (
     <div className="relative z-10 pt-0 pb-20 px-4 sm:px-6 lg:px-8" data-project-section>
@@ -39,21 +39,21 @@ const LatestProjectSection = ({ onViewportEnter, onViewportLeave }) => {
           whileHover={{ scale: 1.02 }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-            <div className="relative h-64 lg:h-auto overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-500/20 z-10"></div>
+            <div className="relative flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-500/20 z-10 pointer-events-none"></div>
               <img 
-                src={mainPagePhotoDevLink} 
-                alt="DevLink"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                src={mainPagePhotoTrackerPro} 
+                alt="TrackerPro"
+                className="relative w-full max-h-64 sm:max-h-80 lg:max-h-96 object-contain"
               />
             </div>
 
             <div className="p-8 lg:p-12 flex flex-col justify-center">
               <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors">
-                DevLink
+                TrackerPro
               </h3>
               <p className="text-white/80 text-lg leading-relaxed mb-6">
-                {t('devLinkDescription')}
+                {t('trackerProDescription')}
               </p>
               
               <div className="flex flex-wrap gap-2 mb-8">
@@ -68,7 +68,7 @@ const LatestProjectSection = ({ onViewportEnter, onViewportLeave }) => {
               </div>
 
               <motion.a
-                href="#/project/devLink"
+                href="#/project/trackerPro"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-2xl hover:from-purple-500 hover:to-blue-500 transition-all duration-300 w-fit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

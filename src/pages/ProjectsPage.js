@@ -5,6 +5,7 @@ import { RocketLaunchIcon, EyeIcon } from '@heroicons/react/24/outline';
 import mainPagePhotoAnkietDev from '../assets/ankietDev/mainPage.png';
 import mainPagePhotoNeoCasino from '../assets/neoCasino/mainPage.png';
 import mainPagePhotoDevLink from '../assets/devLink/mainPage.png';
+import mainPagePhotoTrackerPro from '../assets/trackerPro/dashboard.png';
 
 const ProjectsPage = () => {
   const { t } = useTranslation();
@@ -15,10 +16,16 @@ const ProjectsPage = () => {
 
   const projects = [
     {
-      title: 'AnkietDev',
+      title: 'TrackerPro',
+      technologies: ['TypeScript', 'React', 'Symfony', 'Docker', 'PHPUnit'],
+      image: mainPagePhotoTrackerPro,
+      link: '#/project/trackerPro'
+    },
+    {
+      title: 'DevLink',
       technologies: ['PHP', 'React', 'Tailwind', 'MySQL', 'JavaScript'],
-      image: mainPagePhotoAnkietDev,
-      link: '#/project/ankietDev'
+      image:  mainPagePhotoDevLink,
+      link: '#/project/devLink'
     },
     {
       title: 'NeoCasino',
@@ -27,10 +34,10 @@ const ProjectsPage = () => {
       link: '#/project/neoCasino'
     },
     {
-      title: 'DevLink',
+      title: 'AnkietDev',
       technologies: ['PHP', 'React', 'Tailwind', 'MySQL', 'JavaScript'],
-      image:  mainPagePhotoDevLink,
-      link: '#/project/devLink'
+      image: mainPagePhotoAnkietDev,
+      link: '#/project/ankietDev'
     }
   ];
 
