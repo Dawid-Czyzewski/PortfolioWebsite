@@ -16,5 +16,23 @@ export const getCertificates = (t) => [
     description: t('certificate2.description'),
     downloadUrl: "/certificates/revas.pdf",
     fileName: "revas.pdf"
+  },
+  {
+    id: 3,
+    name: t('certificate3.name'),
+    issuer: t('certificate3.issuer'),
+    date: t('certificate3.date'),
+    description: t('certificate3.description'),
+    downloadUrl: "/certificates/python.pdf",
+    fileName: "python.pdf"
+  },
+  {
+    id: 4,
+    name: t('certificate4.name'),
+    issuer: t('certificate4.issuer'),
+    date: t('certificate4.date'),
+    description: t('certificate4.description'),
+    downloadUrl: "/certificates/php.pdf",
+    fileName: "php.pdf"
   }
 ];

@@ -196,6 +196,18 @@
     "date": "2025",
     "description": "Certificate confirming skills in running a computer company"
   },
+  "certificate3": {
+    "name": "Python certificate",
+    "issuer": "Programming Hub",
+    "date": "2026",
+    "description": "Certificate confirming skills in Python"
+  },
+  "certificate4": {
+    "name": "PHP certificate",
+    "issuer": "Programming Hub",
+    "date": "2026",
+    "description": "Certificate confirming skills in PHP"
+  },
   "languagePolish": {
     "name": "Polish",
     "level": "Native"
