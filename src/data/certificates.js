@@ -34,5 +34,32 @@ export const getCertificates = (t) => [
     description: t('certificate4.description'),
     downloadUrl: "/certificates/php.pdf",
     fileName: "php.pdf"
+  },
+  {
+    id: 5,
+    name: t('certificate5.name'),
+    issuer: t('certificate5.issuer'),
+    date: t('certificate5.date'),
+    description: t('certificate5.description'),
+    downloadUrl: "/certificates/adwancePython.pdf",
+    fileName: "adwancePython.pdf"
+  },
+  {
+    id: 6,
+    name: t('certificate6.name'),
+    issuer: t('certificate6.issuer'),
+    date: t('certificate6.date'),
+    description: t('certificate6.description'),
+    downloadUrl: "/certificates/wordpress.pdf",
+    fileName: "wordpress.pdf"
+  },
+  {
+    id: 7,
+    name: t('certificate7.name'),
+    issuer: t('certificate7.issuer'),
+    date: t('certificate7.date'),
+    description: t('certificate7.description'),
+    downloadUrl: "/certificates/django.pdf",
+    fileName: "django.pdf"
   }
 ];

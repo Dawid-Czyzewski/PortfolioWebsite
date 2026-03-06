@@ -208,13 +208,31 @@
     "date": "2026",
     "description": "Certyfikat potwierdzający umiejętności w języku PHP"
   },
+  "certificate5": {
+    "name": "Advanced Python certificate",
+    "issuer": "Programming Hub",
+    "date": "2026",
+    "description": "Certyfikat potwierdzający umiejętności w języku Python"
+  },
+  "certificate6": {
+    "name": "WordPress certificate",
+    "issuer": "Programming Hub",
+    "date": "2026",
+    "description": "Certyfikat potwierdzający umiejętności w WordPress"
+  },
+  "certificate7": {
+    "name": "Django certificate",
+    "issuer": "Programming Hub",
+    "date": "2026",
+    "description": "Certyfikat potwierdzający umiejętności w frameworku Django"
+  },
   "languagePolish": {
     "name": "Polski",
     "level": "Ojczysty"
   },
   "languageEnglish": {
     "name": "Angielski",
-    "level": "B2/C1"
+    "level": "C1"
   },
   "languageJapanese": {
     "name": "Japoński",
