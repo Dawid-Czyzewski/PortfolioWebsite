@@ -226,6 +226,18 @@
     "date": "2026",
     "description": "Certificate confirming skills in Django"
   },
+  "certificate8": {
+    "name": "Flask certificate",
+    "issuer": "Programming Hub",
+    "date": "2026",
+    "description": "Certificate confirming skills in Flask"
+  },
+  "certificate9": {
+    "name": "DevOps certificate",
+    "issuer": "Programming Hub",
+    "date": "2026",
+    "description": "Certificate confirming skills in DevOps"
+  },
   "languagePolish": {
     "name": "Polish",
     "level": "Native"

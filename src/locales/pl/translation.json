@@ -226,6 +226,18 @@
     "date": "2026",
     "description": "Certyfikat potwierdzający umiejętności w frameworku Django"
   },
+  "certificate8": {
+    "name": "Flask certificate",
+    "issuer": "Programming Hub",
+    "date": "2026",
+    "description": "Certyfikat potwierdzający umiejętności w frameworku Flask"
+  },
+  "certificate9": {
+    "name": "DevOps certificate",
+    "issuer": "Programming Hub",
+    "date": "2026",
+    "description": "Certyfikat potwierdzający umiejętności DevOps"
+  },
   "languagePolish": {
     "name": "Polski",
     "level": "Ojczysty"

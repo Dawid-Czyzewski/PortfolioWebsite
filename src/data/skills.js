@@ -15,6 +15,7 @@ export const skills = [
   'MySQL',
   'jQuery',
   'Tailwind',
+  'Flask',
   'WordPress',
   'WooCommerce',
   'Flutter',

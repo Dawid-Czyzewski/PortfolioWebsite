@@ -61,5 +61,23 @@ export const getCertificates = (t) => [
     description: t('certificate7.description'),
     downloadUrl: "/certificates/django.pdf",
     fileName: "django.pdf"
+  },
+  {
+    id: 8,
+    name: t('certificate8.name'),
+    issuer: t('certificate8.issuer'),
+    date: t('certificate8.date'),
+    description: t('certificate8.description'),
+    downloadUrl: "/certificates/flask.pdf",
+    fileName: "flask.pdf"
+  },
+  {
+    id: 9,
+    name: t('certificate9.name'),
+    issuer: t('certificate9.issuer'),
+    date: t('certificate9.date'),
+    description: t('certificate9.description'),
+    downloadUrl: "/certificates/devOps.pdf",
+    fileName: "devOps.pdf"
   }
 ];
