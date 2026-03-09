@@ -10,8 +10,6 @@ export const skills = [
   'PHP',
   'Symfony',
   'PHPUnit',
-  'Java',
-  'Spring Boot',
   'MySQL',
   'jQuery',
   'Tailwind',
