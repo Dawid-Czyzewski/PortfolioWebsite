@@ -13,11 +13,11 @@ const AboutProfile = ({ photo, alt, greeting, description, experience, contactMe
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-3xl blur-xl opacity-30 w-64 h-80"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-3xl blur-xl opacity-30 w-80 h-[28rem]"></div>
               <img
                 src={photo}
                 alt={alt}
-                className="relative w-64 h-80 object-cover object-top rounded-3xl border-2 border-white/20 shadow-xl"
+                className="relative w-80 h-[28rem] object-cover object-top rounded-3xl border-2 border-white/20 shadow-xl"
               />
             </div>
           </motion.div>
