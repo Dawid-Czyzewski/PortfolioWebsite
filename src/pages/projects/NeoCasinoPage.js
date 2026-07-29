@@ -110,7 +110,7 @@ const NeoCasinoPage = () => {
         </div>
 
         <ProjectActions
-          websiteUrl="https://casino.satoshidc.cfolks.pl/"
+          websiteUrl="https://neocasino.dawid-developer.pl"
           githubUrl="https://github.com/Dawid-Czyzewski/NeoCasino"
           t={t}
         />

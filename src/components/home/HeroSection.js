@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { RocketLaunchIcon, SparklesIcon } from '@heroicons/react/24/outline';
+import { RocketLaunchIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from 'react-i18next';
 import ScrollIndicator from './ScrollIndicator';
 
@@ -9,16 +9,6 @@ const HeroSection = ({ showScrollIndicator }) => {
   return (
     <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto text-center space-y-12">
-        <motion.div
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-sm font-medium"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <SparklesIcon className="w-4 h-4" />
-          {t('softwareDeveloper')}
-        </motion.div>
-
         <motion.div
           className="space-y-6"
           initial={{ opacity: 0, y: 30 }}
