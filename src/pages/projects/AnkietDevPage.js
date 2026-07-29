@@ -103,7 +103,7 @@ const AnkietDevPage = () => {
         </div>
 
         <ProjectActions
-          websiteUrl="https://satoshidc.cfolks.pl/"
+          websiteUrl="https://ankietDev.dawid-developer.pl"
           githubUrl="https://github.com/Dawid-Czyzewski/AnkietDev"
           t={t}
         />

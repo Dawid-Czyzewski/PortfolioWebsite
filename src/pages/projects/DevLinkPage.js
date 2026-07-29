@@ -96,7 +96,7 @@ const DevLinkPage = () => {
         </div>
 
         <ProjectActions
-          websiteUrl="https://devlink.satoshidc.cfolks.pl/"
+          websiteUrl="https://DevLink.dawid-developer.pl"
           githubUrl="https://github.com/Dawid-Czyzewski/DevLink"
           t={t}
         />
