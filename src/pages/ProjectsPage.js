@@ -6,6 +6,7 @@ import mainPagePhotoAnkietDev from '../assets/ankietDev/mainPage.png';
 import mainPagePhotoNeoCasino from '../assets/neoCasino/mainPage.png';
 import mainPagePhotoDevLink from '../assets/devLink/mainPage.png';
 import mainPagePhotoTrackerPro from '../assets/trackerPro/dashboard.png';
+import aniaBeautyPlaceholder from '../assets/aniaBeauty/mainPage.png';
 
 const ProjectsPage = () => {
   const { t } = useTranslation();
@@ -15,6 +16,12 @@ const ProjectsPage = () => {
   }, [t]);
 
   const projects = [
+    {
+      title: 'Ania Beauty Studio',
+      technologies: ['TypeScript', 'React', 'Laravel', 'Tailwind'],
+      image: aniaBeautyPlaceholder,
+      link: '#/project/aniaBeauty'
+    },
     {
       title: 'TrackerPro',
       technologies: ['TypeScript', 'React', 'Symfony', 'Docker', 'PHPUnit'],
@@ -43,7 +50,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">``
+      <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}

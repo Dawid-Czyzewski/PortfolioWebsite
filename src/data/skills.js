@@ -9,6 +9,7 @@ export const skills = [
   'Git',
   'PHP',
   'Symfony',
+  'Laravel',
   'PHPUnit',
   'MySQL',
   'PostgreSQL',
