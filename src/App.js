@@ -10,6 +10,7 @@ import AnkietDevPage from './pages/projects/AnkietDevPage';
 import DevLinkPage from './pages/projects/DevLinkPage';
 import TrackerProPage from './pages/projects/TrackerProPage';
 import AniaBeautyPage from './pages/projects/AniaBeautyPage';
+import PirateHeroPage from './pages/projects/PirateHeroPage';
 import ExperienceDetailPage from './pages/experience/ExperienceDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/project/devLink" element={<DevLinkPage />} />
             <Route path="/project/trackerPro" element={<TrackerProPage />} />
             <Route path="/project/aniaBeauty" element={<AniaBeautyPage />} />
+            <Route path="/project/pirateHero" element={<PirateHeroPage />} />
             <Route path="/experience/:id" element={<ExperienceDetailPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

@@ -7,6 +7,7 @@ import mainPagePhotoNeoCasino from '../assets/neoCasino/mainPage.png';
 import mainPagePhotoDevLink from '../assets/devLink/mainPage.png';
 import mainPagePhotoTrackerPro from '../assets/trackerPro/dashboard.png';
 import aniaBeautyPlaceholder from '../assets/aniaBeauty/mainPage.png';
+import pirateHeroPlaceholder from '../assets/pirateHero/mainPage.png';
 
 const ProjectsPage = () => {
   const { t } = useTranslation();
@@ -16,6 +17,12 @@ const ProjectsPage = () => {
   }, [t]);
 
   const projects = [
+    {
+      title: 'PirateHero',
+      technologies: ['TypeScript', 'React', 'Symfony', 'API Platform', 'Tailwind'],
+      image: pirateHeroPlaceholder,
+      link: '#/project/pirateHero'
+    },
     {
       title: 'Ania Beauty Studio',
       technologies: ['TypeScript', 'React', 'Laravel', 'Tailwind'],
