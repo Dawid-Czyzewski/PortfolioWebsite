@@ -14,8 +14,8 @@ const ContactPage = () => {
     {
       icon: EnvelopeIcon,
       title: t('contactEmail'),
-      value: 'dawid.czyzewski.developer@gmail.com',
-      href: 'mailto:dawid.czyzewski.developer@gmail.com'
+      value: 'kontakt@dawid-developer.pl',
+      href: 'mailto:kontakt@dawid-developer.pl'
     },
     {
       icon: MapPinIcon,
