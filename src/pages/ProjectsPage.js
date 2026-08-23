@@ -8,6 +8,7 @@ import mainPagePhotoDevLink from '../assets/devLink/mainPage.png';
 import mainPagePhotoTrackerPro from '../assets/trackerPro/dashboard.png';
 import aniaBeautyPlaceholder from '../assets/aniaBeauty/mainPage.png';
 import pirateHeroPlaceholder from '../assets/pirateHero/mainPage.png';
+import eventlyPlaceholder from '../assets/evently/mainPage.png';
 
 const ProjectsPage = () => {
   const { t } = useTranslation();
@@ -17,6 +18,12 @@ const ProjectsPage = () => {
   }, [t]);
 
   const projects = [
+    {
+      title: 'Evently',
+      technologies: ['TypeScript', 'Next.js', 'React', 'Laravel', 'Tailwind'],
+      image: eventlyPlaceholder,
+      link: '#/project/evently'
+    },
     {
       title: 'PirateHero',
       technologies: ['TypeScript', 'React', 'Symfony', 'API Platform', 'Tailwind'],
