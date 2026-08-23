@@ -131,7 +131,7 @@ const EventlyPage = () => {
         </div>
 
         <ProjectActions
-          websiteUrl="https://evently.pl"
+          websiteUrl="https://evently.dawid-developer.pl/"
           githubFrontendUrl="https://github.com/Dawid-Czyzewski/Evently-frontend"
           githubBackendUrl="https://github.com/Dawid-Czyzewski/Evently-backend"
           t={t}
