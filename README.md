@@ -1,50 +1,44 @@
-English below
-
 # Portfolio Website
-Profesjonalna strona portfolio dedicowana prezentacji projektów, doświadczenia zawodowego oraz kompetencji technicznych.
-## Zakres
-Aplikacja frontendowa umożliwiająca:
-- przegląd zrealizowanych projektów wraz z dedykowanymi podstronami szczegółowymi
-- prezentację doświadczenia zawodowego, umiejętności, edukacji i certyfikatów
-- komunikację poprzez sekcję kontaktową
-- obsługę dwóch wersji językowych (PL / EN)
-## Technologie
-- React 19
-- React Router
-- Tailwind CSS
-- Framer Motion
+
+Portfolio Dawida Czyżewskiego – projekty, doświadczenie i kontakt (PL / EN).
+
+## Stack
+
+- Next.js 15 (App Router)
+- React 19 + TypeScript
+- Tailwind CSS 4
 - i18next / react-i18next
-- React Three Fiber
-## Uruchomienie lokalne
+- Lucide + react-icons
+
+## Uruchomienie
+
 ```bash
 npm install
-npm start
+cp .env.example .env.local
+npm run dev
 ```
 
-# Portfolio Website
+Aplikacja: [http://localhost:3000](http://localhost:3000)
 
-A professional portfolio website dedicated to presenting projects, professional experience, and technical competencies.
+## Skrypty
 
-## Scope
+| Komenda | Opis |
+|---------|------|
+| `npm run dev` | Serwer deweloperski |
+| `npm run build` | Build produkcyjny |
+| `npm start` | Start buildu produkcyjnego |
+| `npm run typecheck` | Sprawdzenie typów TypeScript |
 
-A frontend application enabling:
-- an overview of completed projects with dedicated detail pages
-- presentation of professional experience, skills, education, and certificates
-- communication through a contact section
-- support for two language versions (PL / EN)
+## SEO
 
-## Technologies
+- Metadata / Open Graph / Twitter Cards na każdej stronie
+- `sitemap.xml`, `robots.txt`
+- JSON-LD (`Person`)
+- Canonical URL (`NEXT_PUBLIC_SITE_URL`)
 
-- React 19
-- React Router
-- Tailwind CSS
-- Framer Motion
-- i18next / react-i18next
-- React Three Fiber
+## Env
 
-## Local setup
-
-```bash
-npm install
-npm start
+```env
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_SITE_URL=https://dawid-developer.pl
 ```

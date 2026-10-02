@@ -1,0 +1,119 @@
+import type { Experience, ExperienceDetail, ExperienceId, TranslateFn } from '../types';
+
+export const getExperience = (t: TranslateFn, lang: string): Experience[] => [
+  {
+    id: 'zirto',
+    title: t('experienceZirto.title'),
+    company: t('experienceZirto.company'),
+    period: getCurrentExperiencePeriod(lang),
+    description: t('experienceZirto.description'),
+  },
+  {
+    id: 'ironteam',
+    title: t('experienceIRONteam.title'),
+    company: t('experienceIRONteam.company'),
+    period: t('experienceIRONteam.period'),
+    description: t('experienceIRONteam.description'),
+  },
+  {
+    id: 'blusoft',
+    title: t('experienceBluSoft.title'),
+    company: t('experienceBluSoft.company'),
+    period: t('experienceBluSoft.period'),
+    description: t('experienceBluSoft.description'),
+  },
+  {
+    id: 'vocale',
+    title: t('experienceVocale.title'),
+    company: t('experienceVocale.company'),
+    period: t('experienceVocale.period'),
+    description: t('experienceVocale.description'),
+  },
+];
+
+export const getExperienceDetail = (
+  id: string | undefined,
+  t: TranslateFn,
+  lang: string,
+): ExperienceDetail | null => {
+  if (!id || !(id in experienceIds)) return null;
+
+  const experienceMap: Record<ExperienceId, ExperienceDetail> = {
+    zirto: {
+      title: t('experienceZirto.title'),
+      company: t('experienceZirto.company'),
+      period: getCurrentExperiencePeriod(lang),
+      description: t('experienceZirto.description'),
+      details: t('experienceZirto.details'),
+    },
+    ironteam: {
+      title: t('experienceIRONteam.title'),
+      company: t('experienceIRONteam.company'),
+      period: t('experienceIRONteam.period'),
+      description: t('experienceIRONteam.description'),
+      details: t('experienceIRONteam.details'),
+    },
+    blusoft: {
+      title: t('experienceBluSoft.title'),
+      company: t('experienceBluSoft.company'),
+      period: t('experienceBluSoft.period'),
+      description: t('experienceBluSoft.description'),
+      details: t('experienceBluSoft.details'),
+    },
+    vocale: {
+      title: t('experienceVocale.title'),
+      company: t('experienceVocale.company'),
+      period: t('experienceVocale.period'),
+      description: t('experienceVocale.description'),
+      details: t('experienceVocale.details'),
+    },
+  };
+
+  return experienceMap[id as ExperienceId];
+};
+
+const experienceIds: Record<ExperienceId, true> = {
+  zirto: true,
+  ironteam: true,
+  blusoft: true,
+  vocale: true,
+};
+
+const getCurrentExperiencePeriod = (lang: string): string => {
+  const start = new Date(2025, 2);
+  const now = new Date();
+
+  let totalMonths =
+    (now.getFullYear() - start.getFullYear()) * 12 +
+    (now.getMonth() - start.getMonth());
+
+  if (totalMonths < 0) totalMonths = 0;
+
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+
+  if (lang === 'en') {
+    const yearPart = years > 0 ? `${years} year${years > 1 ? 's' : ''}` : '';
+    const monthPart = months > 0 ? `${months} month${months > 1 ? 's' : ''}` : '';
+    const duration = [yearPart, monthPart].filter(Boolean).join(' ');
+    return `${duration || '1 month'} (current)`;
+  }
+
+  const getPolishYear = (y: number) => {
+    if (y === 1) return 'rok';
+    if (y >= 2 && y <= 4) return 'lata';
+    return 'lat';
+  };
+
+  const getPolishMonth = (m: number) => {
+    if (m === 1) return 'miesiąc';
+    if (m >= 2 && m <= 4) return 'miesiące';
+    return 'miesięcy';
+  };
+
+  const yearPart = years > 0 ? `${years} ${getPolishYear(years)}` : '';
+  const monthPart = months > 0 ? `${months} ${getPolishMonth(months)}` : '';
+  const duration = [yearPart, monthPart].filter(Boolean).join(' ');
+
+  return `${duration || '1 miesiąc'} (obecnie)`;
+};
