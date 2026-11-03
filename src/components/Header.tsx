@@ -28,6 +28,7 @@ const Header = () => {
     ['/', t('home')],
     ['/about', t('about')],
     ['/projects', t('projects')],
+    ['/korepetycje', t('tutoringNav')],
     ['/contact', t('contact')],
   ] as const;
 
@@ -41,7 +42,7 @@ const Header = () => {
           Dawid <span className="brand-last">Czyżewski</span>
         </Link>
 
-        <nav className="nav-desktop">
+        <nav className="nav-desktop" aria-label="Główne">
           {nav.map(([href, label]) => (
             <Link
               key={href}
@@ -61,7 +62,7 @@ const Header = () => {
               onClick={() => setLang('pl')}
               aria-label="Polski"
             >
-              <PL className="language-flag" title="PL" />
+              <PL className="language-flag" aria-hidden="true" />
               PL
             </button>
             <button
@@ -70,7 +71,7 @@ const Header = () => {
               onClick={() => setLang('en')}
               aria-label="English"
             >
-              <GB className="language-flag" title="GB" />
+              <GB className="language-flag" aria-hidden="true" />
               EN
             </button>
           </div>
@@ -91,7 +92,7 @@ const Header = () => {
       </div>
 
       {menuOpen && (
-        <nav className="container nav-mobile">
+        <nav className="container nav-mobile" aria-label="Mobilne">
           {nav.map(([href, label]) => (
             <Link
               key={href}

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import type { IconComponent } from '../types';
@@ -13,9 +14,13 @@ const Footer = () => {
   return (
     <footer className="app-footer">
       <div className="container footer-inner">
-        <p className="text-white/50 text-sm text-left">
-          {t('footerCopyright', { year: new Date().getFullYear() })}
-        </p>
+        <div className="footer-copy">
+          <p>{t('footerCopyright', { year: new Date().getFullYear() })}</p>
+          <nav className="footer-links" aria-label="Stopka">
+            <Link href="/korepetycje">{t('tutoringNav')}</Link>
+            <Link href="/polityka-prywatnosci">{t('privacyNav')}</Link>
+          </nav>
+        </div>
         <div className="footer-social">
           <a
             href="https://www.linkedin.com/in/dawid-czyżewski"

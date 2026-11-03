@@ -6,18 +6,23 @@ type Props = {
   params: Promise<{ id: string }>;
 };
 
-const titles: Record<string, string> = {
-  zirto: 'experienceZirto.title',
-  ironteam: 'experienceIRONteam.title',
-  blusoft: 'experienceBluSoft.title',
-  vocale: 'experienceVocale.title',
-};
-
-const descriptions: Record<string, string> = {
-  zirto: 'experienceZirto.description',
-  ironteam: 'experienceIRONteam.description',
-  blusoft: 'experienceBluSoft.description',
-  vocale: 'experienceVocale.description',
+const metaById: Record<string, { title: string; description: string }> = {
+  zirto: {
+    title: 'PHP Developer | Zirto',
+    description: 'experienceZirto.description',
+  },
+  ironteam: {
+    title: 'PHP Developer | IRONteam',
+    description: 'experienceIRONteam.description',
+  },
+  blusoft: {
+    title: 'Junior PHP Developer | BluSoft',
+    description: 'experienceBluSoft.description',
+  },
+  vocale: {
+    title: 'Junior Flutter Developer | Vocale',
+    description: 'experienceVocale.description',
+  },
 };
 
 export async function generateStaticParams() {
@@ -31,10 +36,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
-  const titleKey = titles[id];
-  const descriptionKey = descriptions[id];
+  const entry = metaById[id];
 
-  if (!titleKey || !descriptionKey) {
+  if (!entry) {
     return buildPageMetadata({
       title: tMeta('pageNotFound'),
       description: tMeta('pageNotFound'),
@@ -43,8 +47,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildPageMetadata({
-    title: tMeta(titleKey),
-    description: tMeta(descriptionKey),
+    title: entry.title,
+    description: tMeta(entry.description),
     path: `/experience/${id}`,
   });
 }

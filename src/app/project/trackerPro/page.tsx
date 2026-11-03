@@ -3,8 +3,8 @@ import TrackerProPage from '@/views/projects/TrackerProPage';
 import { buildPageMetadata, tMeta } from '@/lib/seo';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: 'TrackerPro',
-  description: tMeta('trackerProDescription'),
+  title: 'TrackerPro | aplikacje o pracę i budżet',
+  description: tMeta('trackerProDescription').slice(0, 155),
   path: '/project/trackerPro',
 });
 

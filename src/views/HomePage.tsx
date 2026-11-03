@@ -1,14 +1,12 @@
 'use client';
 
 import { Fragment } from 'react';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Rocket, Send } from 'lucide-react';
+import { ArrowRight, BookOpen, Rocket } from 'lucide-react';
 import { FaPhp, FaReact, FaDocker } from 'react-icons/fa';
 import { SiPostgresql, SiTailwindcss } from 'react-icons/si';
-import heroDesk from '../assets/hero-desk-hq.jpg';
-import { imageSrc } from '../lib/image';
 import type { IconComponent } from '../types';
 
 const technologies: Array<{ name: string; Icon: IconComponent; color: string }> = [
@@ -25,7 +23,15 @@ const HomePage = () => {
   return (
     <main className="home-page">
       <section className="home-hero">
-        <img src={imageSrc(heroDesk)} alt="Stanowisko pracy developera" className="hero-photo" />
+        <Image
+          src="/images/hero-desk.webp"
+          alt="Biurko programisty z monitorem i klawiaturą"
+          className="hero-photo"
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 60vw"
+          quality={70}
+        />
         <div className="hero-photo-fade" />
         <div className="page-orbs" aria-hidden="true">
           <span className="glow-orb glow-orb-1" />
@@ -42,11 +48,11 @@ const HomePage = () => {
             <p className="hero-text reveal" style={{ '--d': 1 }}>{t('heroSubtitle')}</p>
 
             <div className="hero-actions reveal" style={{ '--d': 2 }}>
-              <Link href="/projects" className="primary-button">
-                <Send size={18} /> {t('heroProjectsCta')} <ArrowRight size={18} />
+              <Link href="/contact" className="primary-button">
+                <Rocket size={18} /> {t('heroContactCta')} <ArrowRight size={18} />
               </Link>
-              <Link href="/contact" className="secondary-button">
-                <Rocket size={18} /> {t('heroContactCta')}
+              <Link href="/korepetycje/programowanie" className="secondary-button">
+                <BookOpen size={18} /> {t('heroTutoringCta')}
               </Link>
             </div>
 

@@ -3,8 +3,8 @@ import ContactPage from '@/views/ContactPage';
 import { buildPageMetadata, tMeta } from '@/lib/seo';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: tMeta('contact'),
-  description: tMeta('contactIntro'),
+  title: 'Kontakt | napisz w sprawie projektu lub korepetycji',
+  description: tMeta('contactIntro').slice(0, 155),
   path: '/contact',
 });
 

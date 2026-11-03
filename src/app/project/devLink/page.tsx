@@ -3,8 +3,8 @@ import DevLinkPage from '@/views/projects/DevLinkPage';
 import { buildPageMetadata, tMeta } from '@/lib/seo';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: 'DevLink',
-  description: tMeta('devLinkDescription'),
+  title: 'DevLink | współpraca programistów',
+  description: tMeta('devLinkDescription').slice(0, 155),
   path: '/project/devLink',
 });
 

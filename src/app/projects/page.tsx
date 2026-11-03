@@ -3,8 +3,8 @@ import ProjectsPage from '@/views/ProjectsPage';
 import { buildPageMetadata, tMeta } from '@/lib/seo';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: tMeta('projects'),
-  description: tMeta('projectsDescription'),
+  title: 'Projekty | portfolio aplikacji webowych i mobilnych',
+  description: tMeta('projectsDescription').slice(0, 155),
   path: '/projects',
 });
 

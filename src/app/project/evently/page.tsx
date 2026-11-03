@@ -3,8 +3,8 @@ import EventlyPage from '@/views/projects/EventlyPage';
 import { buildPageMetadata, tMeta } from '@/lib/seo';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: 'Evently',
-  description: tMeta('eventlyDescription'),
+  title: 'Evently | bilety i formularze wydarzeń',
+  description: tMeta('eventlyDescription').slice(0, 155),
   path: '/project/evently',
 });
 

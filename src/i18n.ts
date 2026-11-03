@@ -4,24 +4,38 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import plTranslation from './locales/pl/translation.json';
 import enTranslation from './locales/en/translation.json';
 
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
+const resources = {
+  pl: { translation: plTranslation },
+  en: { translation: enTranslation },
+};
+
+const isBrowser = typeof window !== 'undefined';
+
+if (!i18n.isInitialized) {
+  const instance = i18n.use(initReactI18next);
+
+  if (isBrowser) {
+    instance.use(LanguageDetector);
+  }
+
+  instance.init({
+    // On the server always render Polish so HTML has real content for crawlers.
+    lng: isBrowser ? undefined : 'pl',
     fallbackLng: 'pl',
     supportedLngs: ['pl', 'en'],
     debug: false,
-    resources: {
-      pl: {
-        translation: plTranslation
-      },
-      en: {
-        translation: enTranslation
-      }
-    },
+    resources,
     interpolation: {
       escapeValue: false,
     },
+    react: {
+      useSuspense: false,
+    },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage'],
+    },
   });
+}
 
 export default i18n;

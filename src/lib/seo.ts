@@ -22,17 +22,19 @@ export const buildPageMetadata = ({
   description,
   path = '/',
   image,
+  absoluteTitle = false,
 }: {
   title: string;
   description: string;
   path?: string;
   image?: string;
+  absoluteTitle?: boolean;
 }): Metadata => {
   const url = new URL(path, SITE_URL).toString();
   const ogImage = image ? new URL(image, SITE_URL).toString() : undefined;
 
   return {
-    title,
+    title: absoluteTitle ? { absolute: title } : title,
     description,
     alternates: {
       canonical: url,

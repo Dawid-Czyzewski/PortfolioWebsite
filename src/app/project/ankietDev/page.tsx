@@ -3,8 +3,8 @@ import AnkietDevPage from '@/views/projects/AnkietDevPage';
 import { buildPageMetadata, tMeta } from '@/lib/seo';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: 'AnkietDev',
-  description: tMeta('ankietDevDescription'),
+  title: 'AnkietDev | platforma do ankiet online',
+  description: tMeta('ankietDevDescription').slice(0, 155),
   path: '/project/ankietDev',
 });
 

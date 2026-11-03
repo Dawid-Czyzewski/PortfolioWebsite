@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import HashRedirect from '@/components/HashRedirect';
 import I18nProvider from '@/components/I18nProvider';
+import CookieConsent from '@/components/CookieConsent';
 import { rootMetadata } from '@/lib/root-metadata';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 import { tMeta } from '@/lib/seo';
@@ -38,7 +39,8 @@ const jsonLd = {
     'https://github.com/Dawid-Czyzewski/',
     'https://www.linkedin.com/in/dawid-czyżewski',
   ],
-  description: tMeta('heroSubtitle'),
+  description: tMeta('homeSeoDescription'),
+  knowsAbout: ['PHP', 'Symfony', 'React', 'Next.js', 'Flutter', 'TypeScript'],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -58,6 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Header />
             <div className="app-main">{children}</div>
             <Footer />
+            <CookieConsent />
           </div>
         </I18nProvider>
       </body>
