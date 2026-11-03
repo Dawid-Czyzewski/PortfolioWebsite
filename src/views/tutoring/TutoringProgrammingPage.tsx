@@ -57,10 +57,14 @@ const TutoringProgrammingPage = () => {
         </div>
         <div className="container tutoring-layout">
           <div>
-            <p className="section-kicker">{t('tutoringProgKicker')}</p>
-            <h1 className="tutoring-title">{t('tutoringProgTitle')}</h1>
-            <p className="tutoring-lead">{t('tutoringProgLead')}</p>
-            <div className="tutoring-actions">
+            <p className="section-kicker reveal">{t('tutoringProgKicker')}</p>
+            <h1 className="tutoring-title reveal" style={{ '--d': 1 }}>
+              {t('tutoringProgTitle')}
+            </h1>
+            <p className="tutoring-lead reveal" style={{ '--d': 2 }}>
+              {t('tutoringProgLead')}
+            </p>
+            <div className="tutoring-actions reveal" style={{ '--d': 3 }}>
               <Link href="/contact" className="primary-button">
                 {t('tutoringProgBook')} <ArrowRight size={18} />
               </Link>
@@ -70,35 +74,37 @@ const TutoringProgrammingPage = () => {
             </div>
           </div>
 
-          <aside className="tutoring-panel">
-            <p className="tutoring-panel-label">{t('tutoringProgPanelLabel')}</p>
-            <ul>
-              <li><Check size={16} /> {t('tutoringProgPanelOnline')}</li>
-              <li><Check size={16} /> {t('tutoringProgPanelLive')}</li>
-              <li><Check size={16} /> {t('tutoringProgPanelStack')}</li>
-              <li>
-                <Check size={16} />{' '}
-                <span>
-                  {t('tutoringProgPanelDetails')}{' '}
-                  <Link href="/contact">{t('tutoringProgWriteMe')}</Link>
-                </span>
-              </li>
-            </ul>
+          <aside className="tutoring-panel-wrap reveal" style={{ '--d': 3 }}>
+            <div className="tutoring-panel">
+              <p className="tutoring-panel-label">{t('tutoringProgPanelLabel')}</p>
+              <ul>
+                <li><Check size={16} /> {t('tutoringProgPanelOnline')}</li>
+                <li><Check size={16} /> {t('tutoringProgPanelLive')}</li>
+                <li><Check size={16} /> {t('tutoringProgPanelStack')}</li>
+                <li>
+                  <Check size={16} />{' '}
+                  <span>
+                    {t('tutoringProgPanelDetails')}{' '}
+                    <Link href="/contact">{t('tutoringProgWriteMe')}</Link>
+                  </span>
+                </li>
+              </ul>
+            </div>
           </aside>
         </div>
       </section>
 
       <section className="tutoring-section">
         <div className="container tutoring-grid">
-          <article>
+          <article className="reveal" style={{ '--d': 1 }}>
             <h2>{t('tutoringProgForWhoTitle')}</h2>
             <p>{t('tutoringProgForWhoText')}</p>
           </article>
-          <article>
+          <article className="reveal" style={{ '--d': 2 }}>
             <h2>{t('tutoringProgLessonsTitle')}</h2>
             <p>{t('tutoringProgLessonsText')}</p>
           </article>
-          <article>
+          <article className="reveal" style={{ '--d': 3 }}>
             <h2>{t('tutoringProgTeachTitle')}</h2>
             <ul className="tutoring-list">
               <li>{t('tutoringProgTeachPhp')}</li>
@@ -108,7 +114,7 @@ const TutoringProgrammingPage = () => {
               <li>{t('tutoringProgTeachBasics')}</li>
             </ul>
           </article>
-          <article>
+          <article className="reveal" style={{ '--d': 4 }}>
             <h2>{t('tutoringProgPricingTitle')}</h2>
             <p>
               {t('tutoringProgPricingTextBefore')}{' '}
@@ -121,16 +127,20 @@ const TutoringProgrammingPage = () => {
 
       <section className="tutoring-section tutoring-faq">
         <div className="container">
-          <h2>{t('tutoringProgFaqTitle')}</h2>
+          <h2 className="reveal">{t('tutoringProgFaqTitle')}</h2>
           <div className="tutoring-faq-list">
-            {faq.map((item) => (
-              <details key={item.q} className="tutoring-faq-item">
+            {faq.map((item, index) => (
+              <details
+                key={item.q}
+                className="tutoring-faq-item reveal reveal-fast"
+                style={{ '--d': index + 1 }}
+              >
                 <summary>{item.q}</summary>
                 <p>{item.a}</p>
               </details>
             ))}
           </div>
-          <div className="tutoring-actions" style={{ marginTop: 28 }}>
+          <div className="tutoring-actions reveal" style={{ '--d': 6, marginTop: 28 }}>
             <Link href="/contact" className="primary-button">
               {t('tutoringProgFaqCta')} <ArrowRight size={18} />
             </Link>

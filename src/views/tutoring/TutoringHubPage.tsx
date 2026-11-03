@@ -33,11 +33,19 @@ const TutoringHubPage = () => {
           <span className="glow-orb glow-orb-3" />
         </div>
         <div className="container">
-          <p className="section-kicker">{t('tutoringHubKicker')}</p>
-          <h1 className="tutoring-title">{t('tutoringHubTitle')}</h1>
-          <p className="tutoring-lead">{t('tutoringHubLead')}</p>
+          <p className="section-kicker reveal">{t('tutoringHubKicker')}</p>
+          <h1 className="tutoring-title reveal" style={{ '--d': 1 }}>
+            {t('tutoringHubTitle')}
+          </h1>
+          <p className="tutoring-lead reveal" style={{ '--d': 2 }}>
+            {t('tutoringHubLead')}
+          </p>
           <div className="tutoring-cards tutoring-cards-single">
-            <Link href="/korepetycje/programowanie" className="tutoring-card">
+            <Link
+              href="/korepetycje/programowanie"
+              className="tutoring-card reveal"
+              style={{ '--d': 3 }}
+            >
               <BookOpen size={22} />
               <strong>{t('tutoringHubCardTitle')}</strong>
               <span>{t('tutoringHubCardText')}</span>

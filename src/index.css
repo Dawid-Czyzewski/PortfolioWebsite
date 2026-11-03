@@ -1669,6 +1669,9 @@ a { color: inherit; text-decoration: none; }
   gap: 36px;
   align-items: start;
 }
+.tutoring-panel-wrap {
+  animation: float-soft 7s ease-in-out infinite;
+}
 .tutoring-panel {
   padding: 22px;
   border: 1px solid var(--border);
