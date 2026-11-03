@@ -29,6 +29,8 @@ http.createServer = function patchedCreateServer(requestListener, ...rest) {
   }
 
   return originalCreateServer((req, res) => {
+    res.removeHeader('X-Powered-By');
+
     const location = redirectLocation(req);
     if (location) {
       res.writeHead(301, { Location: location });

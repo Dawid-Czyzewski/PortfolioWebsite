@@ -7,16 +7,26 @@ import { useTranslation } from 'react-i18next';
 import { Menu, Rocket, X } from 'lucide-react';
 import { PL, GB } from 'country-flag-icons/react/3x2';
 
+const LANG_KEY = 'i18nextLng';
+
 const Header = () => {
   const { t, i18n } = useTranslation();
-  const [lang, setLang] = useState(i18n.language || 'pl');
+  const [lang, setLang] = useState('pl');
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname() ?? '/';
 
   useEffect(() => {
-    if (i18n.language !== lang) {
-      i18n.changeLanguage(lang);
+    const stored = window.localStorage.getItem(LANG_KEY);
+    if (stored?.startsWith('en')) {
+      setLang('en');
     }
+  }, []);
+
+  useEffect(() => {
+    if (i18n.language !== lang) {
+      void i18n.changeLanguage(lang);
+    }
+    window.localStorage.setItem(LANG_KEY, lang);
     document.documentElement.lang = lang.startsWith('en') ? 'en' : 'pl';
   }, [lang, i18n]);
 
@@ -42,7 +52,7 @@ const Header = () => {
           Dawid <span className="brand-last">Czyżewski</span>
         </Link>
 
-        <nav className="nav-desktop" aria-label="Główne">
+        <nav className="nav-desktop" aria-label={t('navAriaMain')}>
           {nav.map(([href, label]) => (
             <Link
               key={href}
@@ -92,7 +102,7 @@ const Header = () => {
       </div>
 
       {menuOpen && (
-        <nav className="container nav-mobile" aria-label="Mobilne">
+        <nav className="container nav-mobile" aria-label={t('navAriaMobile')}>
           {nav.map(([href, label]) => (
             <Link
               key={href}

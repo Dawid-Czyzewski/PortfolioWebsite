@@ -1,12 +1,17 @@
+'use client';
+
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { ArrowRight, BookOpen } from 'lucide-react';
 import JsonLd from '@/components/JsonLd';
 
 const TutoringHubPage = () => {
+  const { t } = useTranslation();
+
   const serviceLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Korepetycje z programowania',
+    name: t('tutoringServiceName'),
     provider: {
       '@type': 'Person',
       name: 'Dawid Czyżewski',
@@ -15,8 +20,7 @@ const TutoringHubPage = () => {
     },
     areaServed: 'PL',
     url: 'https://dawid-developer.pl/korepetycje',
-    description:
-      'Korepetycje online z programowania: PHP, React, Python, Flutter, HTML/CSS, Git i SQL.',
+    description: t('tutoringServiceDesc'),
   };
 
   return (
@@ -29,20 +33,16 @@ const TutoringHubPage = () => {
           <span className="glow-orb glow-orb-3" />
         </div>
         <div className="container">
-          <p className="section-kicker">KOREPETYCJE</p>
-          <h1 className="tutoring-title">
-            Uczę tego, czym zajmuję się na co dzień
-          </h1>
-          <p className="tutoring-lead">
-            Prowadzę korepetycje z programowania online. Napisz do mnie i umówimy pierwszą lekcję.
-          </p>
+          <p className="section-kicker">{t('tutoringHubKicker')}</p>
+          <h1 className="tutoring-title">{t('tutoringHubTitle')}</h1>
+          <p className="tutoring-lead">{t('tutoringHubLead')}</p>
           <div className="tutoring-cards tutoring-cards-single">
             <Link href="/korepetycje/programowanie" className="tutoring-card">
               <BookOpen size={22} />
-              <strong>Programowanie</strong>
-              <span>PHP/Symfony, React, Python, Flutter, HTML/CSS, Git, SQL</span>
+              <strong>{t('tutoringHubCardTitle')}</strong>
+              <span>{t('tutoringHubCardText')}</span>
               <em>
-                Zobacz szczegóły <ArrowRight size={16} />
+                {t('tutoringHubCardCta')} <ArrowRight size={16} />
               </em>
             </Link>
           </div>

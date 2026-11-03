@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense, type ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import {
@@ -89,9 +89,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <Suspense fallback={null}>
-        <AboutTabs />
-      </Suspense>
+      <AboutTabs />
     </main>
   );
 };

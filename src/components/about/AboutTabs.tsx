@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import {
   Award,
@@ -74,16 +73,19 @@ const featuredSkills = [
   { name: 'WooCommerce', use: 'skillWoocommerce', Icon: SiWoocommerce, color: '#c084fc' },
 ];
 
+const ALLOWED_TABS = new Set(['skills', 'experience', 'education', 'certificates']);
+
 const AboutTabs = () => {
   const { t, i18n } = useTranslation();
-  const searchParams = useSearchParams();
   const lang = i18n.language;
-  const tabFromUrl = searchParams?.get('tab') ?? null;
-  const [activeTab, setActiveTab] = useState(tabFromUrl || 'skills');
+  const [activeTab, setActiveTab] = useState('skills');
 
   useEffect(() => {
-    if (tabFromUrl) setActiveTab(tabFromUrl);
-  }, [tabFromUrl]);
+    const tab = new URLSearchParams(window.location.search).get('tab');
+    if (tab && ALLOWED_TABS.has(tab)) {
+      setActiveTab(tab);
+    }
+  }, []);
 
   const experience = getExperience(t, lang);
   const education = getEducation(t);

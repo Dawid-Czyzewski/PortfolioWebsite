@@ -21,6 +21,19 @@ const securityHeaders = [
     key: 'Permissions-Policy',
     value: 'camera=(), microphone=(), geolocation=()',
   },
+  {
+    key: 'Content-Security-Policy',
+    // GA + https images (logo firm / certyfikaty) so the console stays clean.
+    value: [
+      "default-src 'self'",
+      "img-src 'self' data: https:",
+      "style-src 'self' 'unsafe-inline'",
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
+      "font-src 'self' data:",
+      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://*.google-analytics.com",
+      "frame-ancestors 'self'",
+    ].join('; '),
+  },
 ];
 
 const nextConfig: NextConfig = {

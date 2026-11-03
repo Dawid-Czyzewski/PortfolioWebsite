@@ -1,11 +1,11 @@
 import type { Experience, ExperienceDetail, ExperienceId, TranslateFn } from '../types';
 
-export const getExperience = (t: TranslateFn, lang: string): Experience[] => [
+export const getExperience = (t: TranslateFn, _lang?: string): Experience[] => [
   {
     id: 'zirto',
     title: t('experienceZirto.title'),
     company: t('experienceZirto.company'),
-    period: getCurrentExperiencePeriod(lang),
+    period: t('experienceZirto.period'),
     description: t('experienceZirto.description'),
   },
   {
@@ -34,7 +34,7 @@ export const getExperience = (t: TranslateFn, lang: string): Experience[] => [
 export const getExperienceDetail = (
   id: string | undefined,
   t: TranslateFn,
-  lang: string,
+  _lang?: string,
 ): ExperienceDetail | null => {
   if (!id || !(id in experienceIds)) return null;
 
@@ -42,7 +42,7 @@ export const getExperienceDetail = (
     zirto: {
       title: t('experienceZirto.title'),
       company: t('experienceZirto.company'),
-      period: getCurrentExperiencePeriod(lang),
+      period: t('experienceZirto.period'),
       description: t('experienceZirto.description'),
       details: t('experienceZirto.details'),
     },
@@ -77,43 +77,4 @@ const experienceIds: Record<ExperienceId, true> = {
   ironteam: true,
   blusoft: true,
   vocale: true,
-};
-
-const getCurrentExperiencePeriod = (lang: string): string => {
-  const start = new Date(2025, 2);
-  const now = new Date();
-
-  let totalMonths =
-    (now.getFullYear() - start.getFullYear()) * 12 +
-    (now.getMonth() - start.getMonth());
-
-  if (totalMonths < 0) totalMonths = 0;
-
-  const years = Math.floor(totalMonths / 12);
-  const months = totalMonths % 12;
-
-  if (lang === 'en') {
-    const yearPart = years > 0 ? `${years} year${years > 1 ? 's' : ''}` : '';
-    const monthPart = months > 0 ? `${months} month${months > 1 ? 's' : ''}` : '';
-    const duration = [yearPart, monthPart].filter(Boolean).join(' ');
-    return `${duration || '1 month'} (current)`;
-  }
-
-  const getPolishYear = (y: number) => {
-    if (y === 1) return 'rok';
-    if (y >= 2 && y <= 4) return 'lata';
-    return 'lat';
-  };
-
-  const getPolishMonth = (m: number) => {
-    if (m === 1) return 'miesiąc';
-    if (m >= 2 && m <= 4) return 'miesiące';
-    return 'miesięcy';
-  };
-
-  const yearPart = years > 0 ? `${years} ${getPolishYear(years)}` : '';
-  const monthPart = months > 0 ? `${months} ${getPolishMonth(months)}` : '';
-  const duration = [yearPart, monthPart].filter(Boolean).join(' ');
-
-  return `${duration || '1 miesiąc'} (obecnie)`;
 };

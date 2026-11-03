@@ -1694,10 +1694,16 @@ a { color: inherit; text-decoration: none; }
 .tutoring-panel li,
 .tutoring-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   color: #d5dae8;
   font-size: 14px;
+}
+.tutoring-panel a,
+.tutoring-grid a {
+  color: #c4a0ff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 .tutoring-list li::before {
   content: '';
