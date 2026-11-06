@@ -371,6 +371,12 @@
   "aboutCertificatesTitle": "Certificates",
   "aboutLanguagesTitle": "Languages",
   "downloadCertificate": "Download certificate",
+  "certificate10": {
+    "name": "Claude Code certificate",
+    "issuer": "aimko.tech",
+    "date": "2026",
+    "description": "Workshop: Claude and Claude Code for IT teams (advanced)"
+  },
   "certificate1": {
     "name": "EnglishScore certificate",
     "issuer": "EnglishScore",

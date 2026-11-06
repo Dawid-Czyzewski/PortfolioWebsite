@@ -2,6 +2,15 @@ import type { TranslateFn, Certificate } from '../types';
 
 export const getCertificates = (t: TranslateFn): Certificate[] => [
   {
+    id: 10,
+    name: t('certificate10.name'),
+    issuer: t('certificate10.issuer'),
+    date: t('certificate10.date'),
+    description: t('certificate10.description'),
+    downloadUrl: '/certificates/claudeCode.pdf',
+    fileName: 'claudeCode.pdf',
+  },
+  {
     id: 1,
     name: t('certificate1.name'),
     issuer: t('certificate1.issuer'),

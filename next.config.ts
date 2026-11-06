@@ -1,5 +1,7 @@
 import type { NextConfig } from 'next';
 
+const isDev = process.env.NODE_ENV !== 'production';
+
 const securityHeaders = [
   {
     key: 'Strict-Transport-Security',
@@ -28,9 +30,21 @@ const securityHeaders = [
       "default-src 'self'",
       "img-src 'self' data: https:",
       "style-src 'self' 'unsafe-inline'",
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
+      [
+        "script-src 'self' 'unsafe-inline'",
+        isDev ? "'unsafe-eval'" : '',
+        'https://www.googletagmanager.com https://www.google-analytics.com',
+      ]
+        .filter(Boolean)
+        .join(' '),
       "font-src 'self' data:",
-      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://*.google-analytics.com",
+      [
+        "connect-src 'self'",
+        isDev ? 'ws://localhost:3000 http://localhost:3000' : '',
+        'https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://*.google-analytics.com',
+      ]
+        .filter(Boolean)
+        .join(' '),
       "frame-ancestors 'self'",
     ].join('; '),
   },

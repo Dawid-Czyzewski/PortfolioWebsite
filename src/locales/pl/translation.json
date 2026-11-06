@@ -371,6 +371,12 @@
   "aboutCertificatesTitle": "Certyfikaty",
   "aboutLanguagesTitle": "Języki",
   "downloadCertificate": "Pobierz certyfikat",
+  "certificate10": {
+    "name": "Claude Code certificate",
+    "issuer": "aimko.tech",
+    "date": "2026",
+    "description": "Warsztat: Claude i Claude Code w pracy zespołów IT (poziom zaawansowany)"
+  },
   "certificate1": {
     "name": "EnglishScore certificate",
     "issuer": "EnglishScore",
